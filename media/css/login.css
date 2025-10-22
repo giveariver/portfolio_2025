@@ -1,0 +1,87 @@
+/* 와이드 pc  */
+
+
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:105%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:105%; /*동영상 높이를 꽉차게*/
+   transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:block;
+}
+
+#footerArea{bottom: 0; color: #fff; border-color: #fff;}
+#footerArea .footer_top, #footerArea .footer_bottom, #footerArea p{border-color: #fff !important;}
+#footerArea .terms a {color: #fff;}
+
+
+#content{width:75%; margin:200px auto 100px; padding: 5%; background: rgba(255, 255, 255, .5); border-radius: 10px;
+    backdrop-filter: blur(10px);
+   font-size: 1.8rem; font-weight: 500; }
+
+
+h2{font-size: 8rem; font-family: "Inter", sans-serif;}
+form{margin: 24px 0;
+    width: 500px; display: grid; gap: 24px;
+    grid-template-columns: 1fr .5fr; grid-template-areas: 'a c' 'b c';}
+input{padding: 0 8px; font-size: 1.8rem;}
+
+#id, #pass{height: 60px;}
+#id{grid-area: a;}
+#pass{grid-area: b;}
+#id::placeholder, #pass::placeholder{opacity: .5;}
+.loginbtn{cursor: pointer; grid-area: c; font-size: 2rem; font-weight: 500; color: #fff; background: #221715; transition: all .5s ease;}
+.loginbtn:hover{background: #adadad; color: #221715;}
+#content div{display: flex; align-items: center; gap: 16px; font-size: 2rem; font-weight: 500;}
+
+#content div a{padding: 8px 16px; font-weight: 600; transition: all .5s ease;}
+#content div a:hover{background: #221715; color: #cccccc;}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #content{width: 85%;}
+}
+
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+   #content {font-size: 1.6rem; width: 95%;}
+   h2{font-size: 5.2rem;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+   #content{font-size: 1.8rem;}
+   section{padding: 75px 0;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   #content{font-size: 1.6rem; padding: 8%;}
+   h2{font-size: 4.4rem;}
+   form{width: 100%; display: grid; gap: 24px;
+    grid-template-columns: 1fr; grid-template-areas: 'a' 'b' 'c';}
+    #id, #pass{height: 70px;}
+    .loginbtn{height: 70px;}
+    #content div{justify-content: center;}
+}
+
+/* 최소사이즈 처리 */
+@media screen and (max-width:480px) {
+	/* #wrap { min-width:320px; } */
+   #content {font-size: 1.5rem;}
+   h2{font-size: 3.4rem;}
+   #id, #pass{height: 60px;}
+    .loginbtn{height: 60px;}
+    #content div{gap: 0; }
+}
+
+
