@@ -1,0 +1,37 @@
+/* 공통 비주얼 영역 */
+.visual{width: 2000px; height: 480px;
+    position: relative; top: 0; left: 50%; transform: translateX(-50%);}
+.visual strong{font-size: 2.5rem; color: #fff; font-weight: 700;
+    width: 100%; position: absolute; left: 0; top: 225px; display: block; text-align: center;}
+
+/* 서브 메뉴 영역 */
+.sub_nav{position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%);}
+.sub_nav ul{width: 825px; height: 70px;
+    margin: 0 auto 30px; text-align: center; background: rgba(0, 0, 0, .5); border-radius: 35px;
+    display: flex; gap: 25px; justify-content: center; align-items: center;}
+
+
+.sub_nav ul li a{width: 250px; height: 50px; display: flex; align-items: center; justify-content: center;
+    font-size: 1.25rem; font-weight: 500; border-radius: 25px;
+    transition: all .3s ease; color: #ccc;}
+
+.sub_nav ul li a:hover,
+.sub_nav ul li a.current{color: #fff; background: var(--font-color-main); font-weight: 600;}
+
+
+/* 컨텐츠 타이틀 영역 */
+#content{width: 100%;}
+#content .title_area{width: 1400px; height: 390px; margin: 50px auto 240px; box-sizing: border-box;
+    padding: 150px 0 0; position: relative;}
+
+#content .title_area h2{font-size: 3.75rem; font-weight: 700; text-align: center;
+    margin-bottom: 83px; position: relative;}
+#content .title_area h2::after{
+    content: ''; position: absolute; left: 50%; top: 125px; transform: translateX(-50%);
+    display: block; width: 250px; height: 3px; background: #333;
+}
+#content .title_area p{font-size: 1.13rem; text-align: center; font-weight: 500; color: #666;}
+#content .title_area .line_map{position: absolute; right: 0; top: 0; font-size: 1rem; color: #666;}
+
+p{font-size: 1.23rem; line-height: 35px;}
+

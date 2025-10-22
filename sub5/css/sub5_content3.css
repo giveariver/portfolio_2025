@@ -1,0 +1,28 @@
+/* faq 내용 컨텐츠 */
+#content .content_area{width: 1400px; margin: 0 auto 250px;}
+.faq{width:100%;}  
+.faq .open{text-align: right; margin: 0 10px 20px 0;}   
+
+.faq li{border-bottom: 3px solid #ddd; border-radius: 20px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .1); margin-bottom: 20px; overflow: hidden;}  
+
+.faq .q{position: relative; }
+.faq .q .trigger{padding:20px 40px; background :#f5f5f5;font-weight: 500; transition: all .3s ease;}  
+.faq .hide .q .trigger{display: block; background:none}
+
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{background:#f5f5f5; font-weight: 700;}
+
+.faq span{font-size: 2.25rem; color: #ddd; font-weight: 600;
+    margin-right: 15px; transition: all .5s ease;}
+
+/* .faq .q .trigger:hover span,  
+.faq .q .trigger:active span,  
+.faq .q .trigger:focus span{color: var(--font-color-main);}   */
+
+.faq .q .arrow{display: block; position: absolute; right: 15px; top:20px; color: var(--font-color-main); opacity: .9;} 
+.faq .a{padding: 20px 60px; line-height: 1.5; display: none; background: #f5f5f5;
+    border-top: 1px solid #ccc;}
+.faq .a p{display: flex; font-size: 1.13rem;}
+.faq .a span{color: var(--font-color-point2);}

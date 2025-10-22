@@ -1,0 +1,15 @@
+/* 오시는길 내용 컨텐츠 */
+#content .content_area{width: 1400px; margin: 0 auto 250px;}
+
+#content .content_area #map{width: 1400px; height: 700px; margin: 0 auto;}
+
+#content .content_area table{width: 1080px; font-size: 1.25rem; line-height: 2.19rem; text-align: left;
+    margin: 100px auto 0; vertical-align: text-top;
+    border-collapse: collapse}
+
+#content .content_area table tr{border-bottom: 1px solid #666;}
+#content .content_area table tr:nth-of-type(3){border-bottom: none;}
+
+#content .content_area table th{width: 280px; padding: 40px 60px; box-sizing: border-box; vertical-align: top;}
+#content .content_area table td{width: 400px; padding: 40px 40px; box-sizing: border-box; font-size: 1.13rem;}
+#content .content_area table td strong{font-weight: 500; display: block; margin-bottom: 15px;}

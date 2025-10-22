@@ -1,0 +1,70 @@
+/* 직무소개 내용 컨텐츠 */
+#content .content_area{width: 1400px; margin: 0 auto 250px;}
+#content .content_area .pop_menu>div{width: 100%; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 65px; padding: 20px 20px 20px 40px; box-shadow: 0 0 3px 1px rgba(0, 0, 0, .2); border-radius: 35px;}
+#content .content_area h3{width: 250px; font-size: 1.75rem;}
+#content .content_area .pop_menu>div ul{width: 1060px; display: flex; flex-wrap: wrap; gap: 20px;}
+#content .content_area .pop_menu>div ul li a{font-size: 1.38rem; font-weight: 600; width: 250px; height: 70px;
+    border-radius: 20px; box-sizing: border-box; background: #f5f5f5;
+    position: relative; border-bottom: 5px solid #ddd;
+    display: flex; justify-content: center; align-items: center; transition: all .5s ease;}
+#content .content_area .pop_menu>div ul li a:hover{background: var(--font-color-main); color: #fff;
+    border-bottom: 5px solid #9c0d12;}
+    /* text-indent: -60px; } */
+#content .content_area .pop_menu>div ul li a:active{border: none;}
+/* #content .content_area ul li a::after{
+    content: '→';
+    color: #fff;
+    font-size: 1.88rem;
+    position: absolute; right: 5px; top: 50%; transform: translateY(-50%);
+    opacity: 0;}
+#content .content_area ul li a:hover::after{
+    opacity: 1;
+} */
+
+#content .content_area .modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: #000; opacity: .7; display: none;}
+#content .content_area .popup{position: fixed; top: 50%; left: 50%; transform: translate(-50%,-48%);
+    border-radius: 40px; z-index: 60; display: none;}
+
+#content .content_area .popup .txt{width: 1400px; height: 700px;
+    padding: 60px; background: #fff; box-sizing: border-box; border-radius: 40px;
+    margin: 0 auto; overflow-y: scroll; color: #222; position: relative;
+    border: 3px solid var(--font-color-main);}
+
+   #content .content_area .popup .txt::-webkit-scrollbar{width: 8px;}
+   #content .content_area .popup .txt::-webkit-scrollbar-thumb{
+border-radius: 4px; background: var(--font-color-main);
+background-clip: padding-box;
+border-top: 40px solid transparent;
+border-bottom: 40px solid transparent;}
+   #content .content_area .popup .txt::-webkit-scrollbar-track{box-shadow: inset 0px 0px 4px rgba(0, 0, 0, .2); background: #eee; background-clip: padding-box;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;}
+
+#content .content_area .popup .txt>strong{display: block; font-size: 2.75rem; margin-bottom: 10px;}
+#content .content_area .popup .txt>p{font-size: 1.25rem; font-weight: 500;}
+
+#content .content_area .popup .txt>div{margin: 30px 0; padding: 30px 0; border-top: 1px solid #ccc;}
+#content .content_area .popup .txt div strong{display: block; font-size: 1.75rem; font-weight: 700; margin-bottom: 30px;}
+#content .content_area .popup .txt>div:first-of-type>strong{width: 55px;}
+#content .content_area .popup .txt>div:first-of-type{display: flex; gap: 80px;}
+#content .content_area .popup .txt dt{font-size: 1.5rem; font-weight: 600; margin-bottom: 10px;}
+#content .content_area .popup .txt dd{margin-bottom: 30px; line-height: 1.5;}
+#content .content_area .popup .txt dd:last-of-type{margin: 0;}
+
+#content .content_area .popup .txt ul{display: flex; gap: 31.2px;}
+#content .content_area .popup .txt li{width: 185px; height: 185px; border-radius: 50%; box-sizing: border-box;
+    display: flex; justify-content: center; align-items: center; padding: 10px; text-align: center;
+    font-size: 1.25rem; font-weight: 700; color: #fff; background: var(--font-color-point1);}
+
+#content .content_area .popup .txt .tip{display: flex; justify-content: space-between;}
+#content .content_area .popup .txt p{width: 600px; font-size: 1rem; text-align: justify;}
+
+#content .content_area .popup .close_btn{width: 120px; height: 40px;
+    position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%); background: var(--font-color-main);
+    font-size: 1.5rem; font-weight: 600; display: flex; justify-content: center; align-items: center;
+    color: #fff; border: 2px solid var(--font-color-main); border-radius: 10px;
+    transition: all .3s ease;}
+
+#content .content_area .popup .close_btn:hover{background: #fff; color: var(--font-color-main);}

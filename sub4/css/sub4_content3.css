@@ -1,0 +1,28 @@
+/* 재무정보 내용 컨텐츠 */
+#content .content_area{width: 1400px; margin: 0 auto 250px; position: relative;}
+#content .content_area .titlelink{display: flex; justify-content: space-between; align-items: end;}
+#content .content_area h3{font-size: 2.25rem; font-weight: 700;}
+#content .content_area a{font-size: 1.25rem; font-weight: 600; position: absolute; right: 0; top: 30px;
+    color: #666; border: 1px solid #fff; transition: all .3s ease;}
+#content .content_area a.current{display: none;}
+#content .content_area a:hover{border-bottom: 1px solid #333;}
+#content .content_area .financial{display: flex; justify-content: space-between; position: relative;}
+#content .content_area .financial p{font-size: 0.88rem; font-weight: 600; color: #999; position: absolute; right: 0; top: 70px;}
+#content .content_area .financial table{width: 440px; margin-top: 100px;}
+#content .content_area .financial table tr{height: 40px; border-bottom: 1px solid #ddd;}
+#content .content_area .financial table .title{font-size: 1.5rem; height: 60px;}
+#content .content_area .financial table thead tr:nth-of-type(2){color: #666;}
+#content .content_area .financial table .subtitle{font-size: 1.13rem; height: 60px; background: #eee;}
+#content .content_area .financial table .subtitle th,
+#content .content_area .financial table .subtitle td{padding: 0 20px;}
+#content .content_area .financial table .subtitle th{font-weight: 700;}
+
+#content .content_area .financial table tbody th{text-align: left; width: 330px;
+    padding-left: 30px; font-weight: 500;}
+#content .content_area .financial table td{text-align: right; width: 110px; padding-right: 30px;}
+#content .content_area .financial table .nonetxt{border-bottom: none;}
+#content .content_area .financial table .total{color: var(--font-color-point2); height: 80px;
+    border-top: 1.5px solid var(--font-color-point2); border-bottom: 1.5px solid var(--font-color-point2); font-size: 1.25rem;}
+    #content .content_area .financial table .total th,
+    #content .content_area .financial table .total td{padding: 0 20px;}
+    #content .content_area .financial table .total th{font-weight: 700;}

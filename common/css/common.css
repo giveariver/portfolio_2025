@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+/* CSS Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* font-family: "Noto Sans KR", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+:root{
+      --font-size-h2:5rem;
+      --font-size-h3:3.13rem;
+      --font-size-h4:2rem;
+      --font-size-h5:1.5rem;
+      --font-size-h6:1.2rem;
+
+      --font-color-main:#EF151E;
+      --font-color-point1:#FF9700;
+      --font-color-point2:#006ECD;
+      --font-color-sub1:#97999B;
+      --font-color1:#333;
+      --font-color2:#666;
+      --font-color3:#999;
+      --font-color4:#fff;
+
+}
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+html{font-size: 16px;}
+body{font-family: "Noto Sans KR", sans-serif; 
+     color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #333; text-decoration: none; display: block;}
+img{border: 0; vertical-align: top}
+
+.hidden{display: block; position: absolute;
+        left: -1000%; width: 1px; height: 1px;
+        overflow: hidden; color: #fff}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#wrap{width: 100%; overflow: hidden;}
+/* skin nav (바로가기 메뉴) */
+#skipNav{position: relative; width: 100%; overflow: hidden; z-index: 110;}
+#skipNav a{height: 1px; margin-bottom: -1px; overflow: hidden; text-align: center;
+  color: #fff; font-size: 1.2rem; font-weight: 500;}
+#skipNav a:focus{height: auto; padding: 15px 0; background: var(--font-color-main);}
+
+/* 헤더공통 영역 */
+#headerArea
+    {width: 100%; height: 105px; 
+    position: fixed; left: 0; top: 0; z-index: 100; transition: background .5s ease;
+    }
+#headerArea .header_inner
+    {width: 1740px; height: 100px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;}
+
+#headerArea .logo a
+    {width: 240px; height: 80px;
+    background: url(../images/logo.png);
+    text-indent: -9999px; overflow: hidden;}
+
+/* 글로벌 내비게이션 영역 */
+#gnb{width: 970px;}
+#gnb ul.dropdownmenu{width: 100%; display: flex; flex-wrap: wrap; justify-content: center;}
+#gnb ul.dropdownmenu li.menu{position:relative; width:16.66%; height: 100px; }
+#gnb ul.dropdownmenu li.menu::before{
+  content: '';
+  display: block;
+  width: 0%; height: 3px;
+  background: var(--font-color-main);
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  transition: all .6s ease;
+}
+#gnb ul.dropdownmenu li.menu:hover::before{
+  width: 100%; height: 3px;
+  background: var(--font-color-main);
+}
+
+#gnb ul.dropdownmenu li a.depth1{display:block; padding: 40px 0 30px; color: #fff;
+        text-align: center; transition: all .5s; 
+        font-family: "Montserrat", sans-serif; font-size: 1.3rem;}  
+
+  /* 2depth */
+#gnb ul.dropdownmenu li ul{width:100%; height: 200px; box-sizing: border-box;  /*제일 긴 dapth에 높이를 맞춰*/
+  position:absolute; top:100px; left:0;  /*무적권 top를 내비 height와 맞출것*/
+  padding: 10px 0; line-height: 2.7rem; display: none;  }  /*높이를 내리고 싶다면 패딩으로*/
+
+#gnb ul.dropdownmenu li ul li{ text-align:center; font-weight: 500;}
+#gnb ul.dropdownmenu li ul li a{display:block; font-size: 1.13rem; transition: all .3s ease;
+  position: relative; border-radius: 20px;}
+#gnb ul.dropdownmenu li ul li a:hover{background: var(--font-color-main); color: #fff;}
+
+#headerArea .top_menu{display: flex; gap: 20px; align-items: center; margin-top: 10px;}
+#headerArea .top_menu li a{color: #fff; font-weight: 400;}
+#headerArea .top_menu li .membership{color: #fff;
+  border: 1px solid #fff; padding: 8px 15.5px; border-radius: 17px; box-sizing: border-box;}
+
+/* 푸터공통 영역 */
+#footerArea{width: 100%; height: 360px;
+  margin: 0 auto;
+  border-radius: 50px 50px 0 0;
+  background: rgba(0, 0, 0, .8);}
+
+#footerArea .top_move{width: 75px; height: 75px; border-radius: 50%;
+  font-family: "Montserrat", sans-serif; background: var(--font-color-main);
+  color: #ddd; font-size: 1.2rem; font-weight: 600;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .3);
+  position: fixed; right: 80px; bottom: 100px; z-index: 90; overflow: hidden;
+  margin-left: 800px; transition: color,background .5s ease;
+  display: none;}
+#footerArea .top_move::after{
+  content: "\f102";
+  font-family: "Font Awesome 5 Free";
+  display: flex; align-items: center; justify-content: center; color: var(--font-color-main);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 100px) scale(1);
+  border-radius: 50%;
+  
+  transition: all .5s ease;}
+#footerArea .top_move>span{display: block; text-align: center; margin-top: 25px;}
+
+#footerArea .top_move:hover{background:#fff;}
+#footerArea .top_move:hover::after{transform: translate(-50%, -50%) scale(1);}
+
+#footerArea .footer_inner{width: 1740px; margin: 0 auto; color: #bbb; line-height: 150%; padding: 30px 60px 30px;}
+#footerArea .footer_inner a{color: #ddd;}
+
+#footerArea .footer_top{display: flex; justify-content: space-between; align-items: center;}
+#footerArea .footer_top .footer_logo{width: 280px;height: 93px;}
+#footerArea .footer_top .brandsite{display: flex; justify-content: space-between; align-items: center; width: 918px; height: 60px;}
+#footerArea .footer_top .brandsite li{width: 153px; border-left: 1px solid #bbb; text-align: center; padding: 0 3px;}
+#footerArea .footer_top .brandsite li:hover img{filter: brightness(200%); transform: scale(105%);}
+#footerArea .footer_top .brandsite li img{transition: all .3s ease; margin-top: 5px;}
+
+.footer_bottom{display: flex; justify-content: space-between; align-items: flex-start ;}
+
+#footerArea .footer_left address{font-size: 0.88rem; margin: 30px 0;}
+#footerArea .footer_left address span{font-weight: 500;}
+#footerArea .footer_left .bottom_menu{display: flex; gap: 12px; font-size: 1.06rem; font-weight: 600;}
+#footerArea .footer_left .bottom_menu li{border-right: 1px solid #bbb; box-sizing: border-box; padding-right: 10px;}
+#footerArea .footer_left .bottom_menu li:nth-of-type(6){border: 0px;}
+
+#footerArea .footer_right{width: 300px; display: flex; flex-wrap: wrap; justify-content: right; gap: 90px;
+  margin-top: 8px;}
+
+#footerArea .footer_right .family{font-family: "Montserrat", sans-serif; color: #ddd; font-weight: 600;
+  font-size: 1.13rem; text-align: right; position:relative; box-sizing: border-box;}
+#footerArea .footer_right .family .arrow{display: flex; gap: 20px; padding: 10px 20px; 
+  border: 1px solid #ddd; border-radius: 22px; transition: all .5s;}
+#footerArea .footer_right .family span{display: block; width: 15px; transition: all 1s;}
+
+#footerArea .footer_right .family .arrow:hover{color: #111; background: #ddd; border: 1px solid #111;}
+
+#footerArea .footer_right .family  .aList{position: absolute; bottom: 50px; right: 0px; width: 1000px;
+  font-family: "Noto Sans KR", sans-serif; background: #f7f7f7; color: #333; border: 1px solid #ccc; border-radius: 22px; padding: 10px 40px;
+  box-sizing: border-box; display: none;}
+#footerArea .footer_right .family .aList>ul{display: flex; justify-content: space-between; text-align: left;
+  font-size: 0.88rem; font-weight: 500;}
+#footerArea .footer_right .family  .aList a{color: #555; transition: all .3s;}
+#footerArea .footer_right .family  .aList a:hover{color: var(--font-color-main);}
+#footerArea .footer_right .family .aList ul li{margin: 5px 0; padding: 5px 0;}
+#footerArea .footer_right .family .aList>ul li p{font-weight: 600; font-size: 1rem; margin-bottom: 15px;}
+
+
+#footerArea .footer_right .sns{display: flex; gap: 17px; justify-content: space-between; align-items: center;}
+

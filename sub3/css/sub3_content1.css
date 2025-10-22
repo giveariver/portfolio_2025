@@ -1,0 +1,71 @@
+
+/* 지속가능경영 내용 컨텐츠 */
+#content .content_area{width: 1500px; margin: 0 auto 250px;}
+#content .content_area .sustain_title{width: 1400px; height: 640px; border-radius: 45px; overflow: hidden;
+    position: relative; margin: 0 auto;}
+#content .content_area .sustain_title img{width: 100%; height: 100%;}
+#content .content_area .sustain_title .sustain_title_txt{display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin-top: 0;}
+#content .content_area .sustain_title .sustain_title_txt li{color: #fff; font-size: 3.5rem; font-weight: 700;
+    text-align: center; width: 1400px; line-height: 1.5; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0;}
+
+#content .content_area .sustain_title .sustain_title_txt li:nth-of-type(1){animation: txtani 8s 0s infinite;}
+#content .content_area .sustain_title .sustain_title_txt li:nth-of-type(2){animation: txtani 8s 4s infinite;}
+    @keyframes txtani{
+        0%   { opacity: 0; }
+        20%   { opacity: 1; }
+        40%  { opacity: 1; }
+        60%  { opacity: 0; }
+        100% { opacity: 0; }
+    }
+#content .content_area .sustain_title img{animation: sustainzoom 30s linear infinite;}
+@keyframes sustainzoom {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}}
+
+
+#content .content_area .swiper-container{width: 1500px;}
+#content .content_area .swiper-container .swiper-button-next,
+#content .content_area .swiper-container .swiper-button-prev{color: var(--font-color-point2);}
+#content .content_area .swiper-container .swiper-button-next{right: 0; top: 485px;}
+#content .content_area .swiper-container .swiper-button-prev{left: 0; top: 485px;}
+/* #content .content_area section{width: 100%; height: 842px; margin-top: 150px; border-radius: 50px; padding: 50px 80px 0;
+    box-sizing: border-box; border: 3px solid #ccc;} */
+#content .content_area .swiper-wrapper{width: 1500px; margin: 0 auto;}
+#content .content_area .contlist img{width: 320px; height: 320px;}
+#content .content_area .contlist h3{font-size: 2.5rem; text-align: center;}
+#content .content_area .contlist p{text-align: center; font-size: 1.5rem; margin-top: 18px;}
+#content .content_area .contlist h3 span{color: var(--font-color-point2);}
+
+#content .content_area .swiper-slide.contlist{background: #fff; height: 756px; margin: 150px auto 0;}
+#content .content_area .contlist ul{display: flex; flex-wrap: wrap; justify-content: space-between; position: relative; text-align: center;
+    box-sizing: border-box; width: 1400px; margin: 30px auto 0;}
+#content .content_area .contlist li{ position: relative; border-radius: 160px 160px 0 0; overflow: hidden;}
+#content .content_area .esg_4p{padding-top: 30px;}
+#content .content_area .esg_4p li{height: 580px;}
+#content .content_area .esg_4p li div{width: 320px; height: 580px; position: absolute; left: 0; top: 0;
+    background: linear-gradient(#fff 0%,#006dcd38 50%, #fff 100%); z-index: -10; }
+
+#content .content_area .esg_4p li:nth-of-type(1) div{animation: gradient_bg_ani 3s linear .5s infinite;}
+#content .content_area .esg_4p li:nth-of-type(2) div{animation: gradient_bg_ani 3s linear 1s infinite;}
+#content .content_area .esg_4p li:nth-of-type(3) div{animation: gradient_bg_ani 3s linear 1.5s infinite;}
+#content .content_area .esg_4p li:nth-of-type(4) div{animation: gradient_bg_ani 3s linear 2s infinite;}
+@keyframes gradient_bg_ani {
+    from {transform: translateY(-800px);;}
+    to {transform: translateY(800px);;}}
+
+
+#content .content_area dl dt{font-family: "Montserrat", sans-serif; font-weight: 700;
+    color: #fff; font-size: 2.5rem; position: absolute; left: 50%; top: 120px; transform: translateX(-50%);}
+#content .content_area dl dd{font-size: 1.25rem; font-weight: 500; margin: 30px 0;}
+
+
+#content .content_area .sustain_value dt{top: 80px;}
+#content .content_area .sustain_value dd strong{display: block; margin-bottom: 60px; font-size: 1.5rem; font-weight: 500;}
+#content .content_area .sustain_value dd{width: 320px; position: absolute; left: 50%; top: 85px; transform: translateX(-50%); color: #fff;
+    font-weight: 400; font-size: 1.25rem;}
+
+
+#content .content_area .governance dt{top: 85px; width: 320px;}
+#content .content_area .governance li:nth-of-type(even) dt{color: var(--font-color-point2);}
+#content .content_area .governance dd{width: 320px; font-size: 1.5rem; position: absolute; left: 50%; top: 150px; transform: translateX(-50%); color: #fff;}
+#content .content_area .governance li:nth-of-type(odd) dd{color: var(--font-color-point2);}

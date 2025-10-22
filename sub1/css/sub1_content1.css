@@ -1,0 +1,137 @@
+/* 기업소개 탭 */
+#content .title_area .tab_menu{width: 840px; display: flex; gap: 30px;
+    position: relative; bottom: 0; left: 50%; transform: translateX(-50%); margin-top: 150px;}
+#content .title_area .tab_menu a{width: 260px; height: 60px; border: 1px solid #ccc;
+    border-radius: 30px; box-sizing: border-box; position: relative; overflow: hidden;
+    display: flex; justify-content: center; align-items: center;
+    color: #666; font-size: 1.13rem; font-weight: 600; transition: all .3s ease;}
+
+#content .title_area .tab_menu a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: var(--font-color-main);
+  transition: all 0.5s ease;}
+
+#content .title_area .tab_menu a:hover{color: #fff;}
+#content .title_area .tab_menu a:hover::after {
+  left: 0;
+  width: 100%;}
+
+#content .title_area .tab_menu .current{background: var(--font-color-main); color: #fff;}
+
+
+/* 기업소개 내용 컨텐츠 */
+#content .content_area{width: 1400px; margin: 0 auto 250px;}
+#content .content_area h3{font-size: 3.13rem; font-weight: 700; margin: 0 0 40px; text-align: center; padding-top: 100px;}
+#content .content_area strong{font-size: 1.88rem; display: block;}
+
+#content .content_area .story li{margin-bottom: 100px;}
+
+#content .content_area .story li:nth-of-type(1) img{width: 1400px; height: 545px;
+    border-radius: 0 120px 0 120px; margin-bottom: 40px;}
+#content .content_area .story .story01_txt{width: 1400px; display: flex; gap: 40px;}
+#content .content_area .story .story01_txt p{width: 680px; text-align: justify;}
+
+#content .content_area .story li:nth-of-type(2){height: 1200px; display: flex; gap: 40px;}
+#content .content_area .story li .story_left, .story_right{width: 680px;
+    display: flex; flex-wrap: wrap; gap: 40px 0px;}
+#content .content_area .story li .story_left{justify-content: flex-end;}
+#content .content_area li .story_left img:nth-of-type(1){height: 408px;
+border-radius: 120px 0 0;}
+#content .content_area .story li .story_left strong{text-align: right;}
+#content .content_area .story li .story_left span{color: var(--font-color-point1);}
+#content .content_area .story li .story_left p{text-align: right;}
+#content .content_area li .story_left img:nth-of-type(2){height: 321px;
+border-radius: 0 0 0 120px;}
+
+#content .content_area .story li .story_right img{height: 839px; border-radius: 0 120px 0 0;}
+#content .content_area .story li .story_right span{color: var(--font-color-point2);}
+
+#content .content_area .story li:nth-of-type(3){height: 800px;}
+#content .content_area .story li:nth-of-type(3) img{width: 1400px; height: 509px;
+    border-radius: 120px 0 120px;}
+#content .content_area .story li:nth-of-type(3) strong{margin: 40px 0;}
+#content .content_area .story li:nth-of-type(3) span{color: var(--font-color-main);}
+
+/* 미션비전 내용 컨텐츠 */
+#content .content_area .mission_vision_wrap{width: 1400px; margin: 0 auto;}
+#content .content_area .mission_vision_wrap .mission_vision>div{border-radius: 125px; 
+    width: 0px; height: 250px; 
+    transform: scaleX(0); /* 처음에는 안 보이게 */
+    transform-origin: center; /* 중앙 기준으로 확대 */ 
+    transition: all 1.2s ease;}
+#content .content_area .mission_vision_wrap .mission_vision div div{
+    height: 100%;
+    display: flex; text-align: center; justify-content: center; align-items: center;}
+#content .content_area .mission_vision .mission{background: url(../images/content1/mission.jpg); margin: 40px 0;}
+#content .content_area .mission_vision .vision{background: url(../images/content1/vision.jpg);}
+#content .content_area .mission_vision strong{font-size: 2.5rem; color: #fff; margin: 0 200px;
+    font-size: 2.13rem; font-weight: 600; transition: all 1s ease;}
+#content .content_area .mission_vision p{font-family: "Montserrat", sans-serif; color: rgba(255, 255, 255, .6);}
+#content .content_area .mission_vision span{font-family: "Montserrat", sans-serif;}
+#content .content_area .mission_vision .mission span{color: var(--font-color-point1);}
+#content .content_area .mission_vision .vision span{color: var(--font-color-main);}
+
+
+#content .content_area .mission_vision_wrap .management{text-align: right; margin: 100px 0 80px;
+display: flex; gap: 40px; justify-content: right; align-items: center; transition: all 1s ease;}
+#content .content_area .mission_vision_wrap .management img{width: 332px; height: 423px;}
+#content .content_area .mission_vision_wrap .management p{margin-top: 40px; font-size: 1.25rem;}
+#content .content_area .mission_vision_wrap .management p span{font-weight: 600;}
+#content .content_area .mission_vision_wrap .management p span:nth-of-type(1){color: var(--font-color-point1);}
+#content .content_area .mission_vision_wrap .management p span:nth-of-type(2){color: var(--font-color-point2);}
+#content .content_area .mission_vision_wrap .management p span:nth-of-type(3){color: var(--font-color-main);}
+
+.CJ_value_box{height: 1900px; position: relative;}
+#content .content_area .mission_vision_wrap .CJ_value{margin: 20px 0; position: relative;}
+#content .content_area .mission_vision_wrap .CJ_value.fix{position: fixed; left: 50%; top: 100px; transform: translateX(-50%);}
+/* 고정 해제: 자연스럽게 아래로 밀림 */
+#content .content_area .mission_vision_wrap .CJ_value.unfix {
+    position: absolute;
+    bottom: 0px; /* 실제 scrollTop 3000 위치에 맞게 조절 필요 */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+#content .content_area .mission_vision_wrap .value_list{width: 1400px; height: 557px; margin-top: 40px;
+    display: flex; flex-wrap: wrap; gap: 10px;
+    text-align: center; color: #ddd; font-size: 1.88rem; }
+    #content .content_area .mission_vision_wrap .value_list li dt{font-family: "Montserrat", sans-serif;
+    line-height: 60px; font-weight: 600; transition: all .5s ease;}
+#content .content_area .mission_vision_wrap .value_list li{
+    width: 1400px; height: 60px; border-radius: 25px; transition: all .5s ease;}
+#content .content_area .mission_vision_wrap .value_list li.active{height: 227px; filter: brightness(1.5);}
+
+#content .content_area .mission_vision_wrap .value_list li:nth-of-type(1){background: url(../images/content1/value1.jpg) center no-repeat;}
+#content .content_area .mission_vision_wrap .value_list li:nth-of-type(2){background: url(../images/content1/value2.jpg) center no-repeat;}
+#content .content_area .mission_vision_wrap .value_list li:nth-of-type(3){background: url(../images/content1/value3.jpg) center no-repeat;}
+#content .content_area .mission_vision_wrap .value_list li:nth-of-type(4){background: url(../images/content1/value4.jpg) center no-repeat;}
+#content .content_area .mission_vision_wrap .value_list li:nth-of-type(5){background: url(../images/content1/value5.jpg) center no-repeat;}
+
+#content .content_area .mission_vision_wrap .value_list li.active dt{padding-top: 20px;}
+#content .content_area .mission_vision_wrap .value_list li dd{padding-top: 15px; opacity: 0; transition: all .5s ease;
+    font-size: 1.75rem; font-weight: 400; font-family: "Noto Sans KR", sans-serif;}
+    #content .content_area .mission_vision_wrap .value_list li.active dd{opacity: 1;}
+
+
+#content .content_area .ci{width: 1100px; margin: 0 auto; position: relative;}
+#content .content_area .ci .ci_concept{display: flex; flex-wrap: wrap; gap: 100px; align-items: center;
+    margin: 100px 0;}
+#content .content_area .ci .ci_concept>img{width: 617px; height: 520px; margin: 40px 0;}
+#content .content_area .ci .ci_concept ul li{margin-top: 25px;}
+#content .content_area .ci .ci_concept ul li strong{margin-bottom: 10px;}
+#content .content_area .ci .ci_concept ul li span{font-weight: 600; font-size: 1.38rem;}
+#content .content_area .ci .ci_concept li:nth-of-type(1) strong{color: var(--font-color-main);}
+#content .content_area .ci .ci_concept li:nth-of-type(2) strong{color: var(--font-color-point1);}
+#content .content_area .ci .ci_concept li:nth-of-type(3) strong{color: var(--font-color-point2);}
+
+#content .content_area .ci>p{font-size: 1.63rem; font-weight: 600; margin-left: 60px;}
+#content .content_area .ci .ci_download{margin: 30px 0 100px; display: flex; justify-content: center;}
+#content .content_area .ci .ci_download a img{width: 50px; height: 50px;}
+#content .content_area .ci .ci_download a{display: flex; width: 174px; gap: 12px; margin: 25px 40px; align-items: center;}

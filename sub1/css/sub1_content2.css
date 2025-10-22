@@ -1,0 +1,21 @@
+/* CEO인사말 내용 컨텐츠 */
+#content .content_area{width: 1400px; margin: 0 auto 250px;}
+#content .content_area h3{font-size: 2.75rem; line-height: 4.13rem; margin-bottom: 60px;}
+#content .content_area strong{font-size: 1.33rem; display: block; color: var(--font-color-point2); margin-bottom: 30px;}
+#content .content_area p{font-size: 1.13rem; line-height: 1.69rem;}
+#content .content_area p span{font-weight: 600;}
+#content .content_area .ceo_txt p{width: 600px; text-align: justify;}
+#content .content_area .ceo_top{width: 1400px; height: 540px; position: relative;
+    background: url(../images/content2/ceo_bg.png) no-repeat center; box-sizing: border-box; padding-left: 60px;}
+#content .content_area .ceo_top img{width: 510px; height: 595px; position: absolute; right: 0; bottom: 0;}
+
+#content .content_area .ceo_bottom{width: 1400px; background: #f9f9f9; padding: 10px 60px;
+    border-radius: 30px; box-sizing: border-box; box-shadow: 0 0 5px 5px rgba(0, 0, 0, .1);}
+#content .content_area .ceo_bottom>span{font-size: 3.13rem; font-weight: 700; color: #dfdfdf; display: block;
+    margin: 30px 0;}
+#content .content_area .ceo_bottom>span:nth-of-type(2){text-align: right;}
+#content .content_area .ceo_bottom .ceo_bottom_txt{display: flex; justify-content: space-between;}
+#content .content_area .ceo_bottom .ceo_bottom_txt div{width: 610px;}
+
+#content .content_area .ceo_bottom .ceo_thankyou p:nth-of-type(2){margin-top: 70px; text-align: right;}
+#content .content_area .ceo_bottom .ceo_thankyou p:nth-of-type(2) span{font-size: 1.25rem; font-weight: 700;}

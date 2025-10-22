@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+.popup{color: #bbb;}
+
+/* 메인 비주얼 영역 */
+.visual{width: 2000px; height: 1050px;
+        position: relative; left: 50%; top: 0;
+        transform: translateX(-50%); overflow: hidden;
+        }
+
+.gallery{position:relative;left:0; top:0; overflow:hidden; width:2000px; height:1050px;}
+.gallery li{display:none; position: absolute;}
+
+.gallery img{animation: galleryzoom 30s linear infinite;}
+@keyframes galleryzoom {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+.gallery li span{display: block; color: #fff; text-align: left; text-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+    opacity: 0; position: absolute; left: 223px; top: 565px;}
+.visual .gallery ul li span:nth-of-type(1){font-size: 5.38rem; font-weight: 700; line-height: 6.44rem;
+    }
+.visual .gallery ul li span:nth-of-type(2){margin-top: 220px; font-family: "Montserrat", sans-serif;
+    font-size: 1.88rem; font-weight: 400; line-height: 2.31rem; text-indent: 5px;
+    }
+
+/* .gallery .link1 span{ left:  100px; top: 300px;} */
+.visual .dockbox{display: flex; justify-content: center; gap: 30px; align-items: center;}
+.dock{position:absolute; width: 500px; left:50%; top:900px; transform: translateX(-50%);
+    display: flex; justify-content: center; gap: 30px; align-items: center;}
+/* 크기 너비 위치 알아 잡아라 */
+.dock div{width: 30px; height: 30px;}
+
+.dock .mbutton{cursor:pointer;
+    width:30px; height:30px;rotate: -90deg;
+    stroke: #fff; stroke-width: 3; fill: transparent;
+    stroke-dasharray: 120; animation: ani 6s linear; display: none;
+    transition: all .45s ease;}
+
+@keyframes ani{
+    from {stroke-dashoffset: 120;}
+    to{stroke-dashoffset: 0;}}
+.dock div{position: relative;}
+
+
+.dock div span{
+    width: 30px; height: 30px;
+    border-radius: 15px;
+    display: block;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.dock div span::after{
+    content: '';
+    width: 8px; height: 8px;
+    border-radius: 4px;
+    display: block;
+    background: rgba(255, 255, 255, .7);
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.dock div span::before{
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 15px;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.dock div span:hover::before{
+    content: '';
+    border: 2px solid rgba(255, 255, 255, .3);
+}
+
+.dock .ps{cursor:pointer; display:flex; justify-content: center; align-items: center;
+    width: 26px; height: 26px;}
+/* 플롯은 싫어서 독한테 flex주자 */
+.dock .ps i{font-size: 24px; color: rgba(255, 255, 255, .7);
+     transition: all .3s ease;}  
+.dock .ps i:hover{color: #fff;}
+
+.visual .btn{display: flex; width: 30px; height: 30px; color: rgba(255, 255, 255, .7);
+    transition: all .3s ease;
+    position: absolute; left:50%; font-size: 24px; transform: translateX(-50%); top:903px; cursor:pointer; }
+.visual .btnLeft{margin-left: -150px; }
+.visual .btnRight{margin-left: 150px; }   
+.visual .btn:hover{color: #fff;} 
+
+/* .visual .gallery li{position: absolute; left: 0; top: 0;}
+.visual .gallery ul li span{display: block; color: #fff; text-align: left; text-shadow: 0 2px 3px rgba(0, 0, 0, .3);}
+.visual .gallery ul li span:nth-of-type(1){font-size: 5.38rem; font-weight: 700; line-height: 6.44rem;
+    position: absolute; left: 223px; top: 545px;}
+.visual .gallery ul li span:nth-of-type(2){font-family: "Montserrat", sans-serif;
+    font-size: 1.88rem; font-weight: 400; line-height: 2.31rem;
+    position: absolute; left: 223px; top: 763px;}
+
+.visual .gallery img{animation: galleryzoom 20s linear infinite;}
+@keyframes galleryzoom {
+    from {transform: scale(1);}
+    to {transform: scale(1.05);}} */
+
+
+/* 본문 컨텐츠 영역 */
+#content h3{font-family: "Montserrat", sans-serif;
+    font-size: 3.13rem; line-height: 150%;}
+
+.viewmore{display: flex; justify-content: space-between; align-items: center;
+    width: 151px; height: 50px; font-family: "Montserrat", sans-serif; font-size: 0.88rem; font-weight: 500;
+    transition: all .5s ease;}
+.viewmore .circle{width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden; border-radius: 50%; border: 1.5px solid #333; box-sizing: border-box;
+    transition: all .5s ease;}
+.viewmore i{width: 13px; height: 12px; background: url(../main_images/viewmore_arrow.png) center no-repeat; transition: all .5s ease;} 
+
+.viewmore .circle::after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 110%;
+	height: 110%;
+    border-radius: 50%;
+	background: var(--font-color-main);
+	transition: all .5s ease;}
+.viewmore:hover .circle::after{transform: translate(-50%, -50%) scale(1);}
+.viewmore:hover .circle{border: 1.5px solid #fff;}
+.viewmore:hover{color: var(--font-color-main);}
+.viewmore:hover i{width: 13px; height: 12px; background: url(../main_images/viewmore_arrowON.png) center no-repeat; z-index: 1;}
+
+/* 타이틀 */
+#content .slogan{padding: 270px 0; margin-bottom: 100px;}
+#content .slogan div{font-size: 4.06rem; display: flex; align-items: center; justify-content: center;
+    opacity: 0;
+    transition: all 1s ease;}
+
+#content .slogan div span{display: block; width: 0px; height: 90px; margin: 0;
+    transform: scaleX(0); /* 처음에는 안 보이게 */
+    transform-origin: center; /* 중앙 기준으로 확대 */ 
+    transition: all 1s ease;}
+#content .slogan div:nth-of-type(1) span{ background: url(../main_images/title01.jpg) no-repeat center;}
+#content .slogan div:nth-of-type(2) span{ background: url(../main_images/title02.jpg) no-repeat center;}
+
+
+/* 회사소개 */
+#content .about_us{width: 100%; height: 900px; color: #fff;
+    margin: 0 auto; position: relative; padding: 140px 0; box-sizing: border-box;
+    display: flex; flex-direction: column; justify-content: space-between;}
+
+#content .about_us img{position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: -10;}
+#content .about_us .about_us_title{width: 1200px;margin: 0 auto;}
+#content .about_us .about_us_title p{font-size: 5rem; font-weight: 700;}
+
+#content .about_us .about_us_txt{width: 1250px; height: 180px; margin: 0 auto 20px;
+    border-radius: 30px; overflow: hidden; position: relative;}
+#content .about_us .about_us_txt .swiper-container{width: 100%; height: 100%;}
+#content .about_us .about_us_txt .swiper-button-next{color: #fff; right: 35px;}
+#content .about_us .about_us_txt .swiper-button-prev{color: #fff; left: 35px;}
+
+#content .about_us .about_us_txt ul li{width: 1000px; height: 180px; text-align: center; line-height: 1.5rem;
+    background: rgba(20, 20, 20, .5);  backdrop-filter: blur(2px); border-radius: 30px; color: #eee;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#content .about_us .about_us_txt strong{font-size: 1.63rem; display: block; margin-bottom: 20px;} 
+
+#content .about_us .viewmore{color: #fff; position: absolute; left: 50%; bottom: 80px; transform: translateX(-50%);}
+#content .about_us .viewmore .circle{border: 1.5px solid #fff;}
+#content .about_us .viewmore:hover .circle{border: none;}
+#content .about_us .viewmore i{width: 13px; height: 12px; background: url(../main_images/viewmore_arrowON.png);}
+
+/* 브랜드 소개 */
+#content .brands{width: 100%; height: 800px; margin: 100px auto; padding: 100px 0; overflow: hidden;} 
+#content .brands .brands_txt{margin: 0 auto; width: 1400px; position: relative;}
+
+#content .brands .brands_txt>div{margin-top: 45px; display: flex;  gap: 50px; align-items: center;
+    box-sizing: border-box; height: 400px;
+    background: #f5f5f5; border-radius: 45px; box-shadow: 0px 0px 4px rgba(0, 0, 0, .25); overflow: hidden;}
+#content .brands .brands_txt img{width: 800px; height: 400px;}
+#content .brands .main_brands_text span{font-size: 1.13rem; display: block; margin-bottom: 5px;} 
+#content .brands .main_brands_text h4{font-size: 3rem; line-height: 58px;}
+#content .brands .main_brands_text p{line-height: 1.5; margin: 20px 0 40px; height: 72px;}
+#content .brands .main_brands_text a{display: inline-block; padding: 7px 21px;
+    color: var(--font-color-main); font-weight: 500;
+    border: 2px solid var(--font-color-main); border-radius: 10px; box-sizing: border-box;
+    transition: all .5s ease-out;}
+#content .brands .main_brands_text a:hover{color: #fff; background: var(--font-color-main);}
+#content .brands .scrollX{width: 100%; overflow: hidden; margin-top: 30px;}
+#content .brands .brands_list{width: 6760px; height: 230px; clear: both; position: relative; left: 0; top: 0;
+    cursor: url('../main_images/cursor.png') 59 35, pointer} 
+
+#content .brands ul{float: left; padding: 40px 0;}
+#content .brands ul li{width: 340px; height: 150px; transition: all .5s ease; margin: 0px 40px;
+    border-radius: 25px; box-shadow: 0px 0px 4px rgba(0, 0, 0, .25); float: left;}
+#content .brands ul li a{width: 340px; height: 150px; text-align: center; position: relative;}
+#content .brands ul li span{display: block; width: 340px;
+    position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);
+    font-size: 1.25rem; font-weight: 500; color: #fff; opacity: 0; transition: all .5s ease;}
+
+#content .brands ul li:nth-of-type(1){background: url(../main_images/brands_touslesjours_2.jpg);}
+#content .brands ul li:nth-of-type(2){background: url(../main_images/brands_vips_2.jpg);}
+#content .brands ul li:nth-of-type(3){background: url(../main_images/brands_theplace_2.jpg);}
+#content .brands ul li:nth-of-type(4){background: url(../main_images/brands_cheiljemyunso_2.jpg);}
+#content .brands ul li:nth-of-type(5){background: url(../main_images/brands_thesteakhouse_2.jpg);}
+#content .brands ul li:nth-of-type(6){background: url(../main_images/brands_nseoultower_2.jpg);}
+#content .brands ul li:nth-of-type(7){background: url(../main_images/brands_ngrill_2.jpg);}
+#content .brands ul li:nth-of-type(8){background: url(../main_images/brands_hancook_2.jpg);}
+    
+
+#content .brands ul li:nth-of-type(1):hover{background: url(../main_images/brands_touslesjours_3.jpg);}
+#content .brands ul li:nth-of-type(2):hover{background: url(../main_images/brands_vips_3.jpg);}
+#content .brands ul li:nth-of-type(3):hover{background: url(../main_images/brands_theplace_3.jpg);}
+#content .brands ul li:nth-of-type(4):hover{background: url(../main_images/brands_cheiljemyunso_3.jpg);}
+#content .brands ul li:nth-of-type(5):hover{background: url(../main_images/brands_thesteakhouse_3.jpg);}
+#content .brands ul li:nth-of-type(6):hover{background: url(../main_images/brands_nseoultower_3.jpg);}
+#content .brands ul li:nth-of-type(7):hover{background: url(../main_images/brands_ngrill_3.jpg);}
+#content .brands ul li:nth-of-type(8):hover{background: url(../main_images/brands_hancook_3.jpg);}
+#content .brands ul li:hover span{opacity: 1;}
+
+#content .brands .viewmore{position: absolute; right: 0; top: 23px;}
+
+/* 글로벌 */
+#content .global_foodville{width: 100%; height: 900px; margin: 100px auto 0;
+    text-align: center; position: relative;}
+#content .global_foodville h3{color: var(--font-color-main); font-size: 4.38rem;}
+#content .global_foodville p{font-size: 1.56rem; line-height: 1.5; margin-top: 5px; font-weight: 500;}
+
+#content .global_foodville .global_map{width: 100%; margin: 0 auto; box-sizing: border-box;}
+#content .global_foodville .global_map .gradient_map{width: 1700px; height: 700px;
+    margin: 35px auto 0; position: relative;}
+
+#content .global_foodville .global_map img{width: 1700px; height: 700px;}
+#content .global_foodville .global_map .gradient{width: 1700px; height:700px;
+    background: linear-gradient(-45deg, #3390c9, #e0495c, #ea9836);
+    background-size: 200% 100%;
+    animation: AnimGrident 10s infinite ease;
+    position: absolute; left: 0; top: 0; z-index: -10;}
+        @keyframes AnimGrident {
+            0% {background-position: 0% 50%}
+
+            50% {background-position: 100% 50%}
+
+            to {background-position: 0% 50%}
+        }
+#content .global_foodville .global_map .country_list{position: absolute; left: 0; top: 0;}
+#content .global_foodville .global_map .country_list li a{position: absolute; transition: all .5s ease;
+    width: 24px; height: 32px; background: url(../main_images/global_pin_off.png) center no-repeat;}
+#content .global_foodville .global_map .country_list li a:hover,
+#content .global_foodville .global_map .country_list li a.active
+    {background: url(../main_images/global_pin.png);}
+#content .global_foodville .global_map .country_list li:nth-of-type(1) a{left: 294px; top: 216px;}
+#content .global_foodville .global_map .country_list li:nth-of-type(2) a{left: 359px; top: 257px;}
+#content .global_foodville .global_map .country_list li:nth-of-type(3) a{left: 1279px; top: 220px;}
+#content .global_foodville .global_map .country_list li:nth-of-type(4) a{left: 1309px; top: 276px;}
+#content .global_foodville .global_map .country_list li:nth-of-type(5) a{left: 1379px; top: 305px;}
+#content .global_foodville .global_map .country_list li:nth-of-type(6) a{left: 1223px; top: 345px;}
+#content .global_foodville .global_map .country_list li:nth-of-type(7) a{left: 1255px; top: 345px;}
+#content .global_foodville .global_map .country_list li:nth-of-type(8) a{left: 1276px; top: 357px;}
+#content .global_foodville .global_map .country_list li:nth-of-type(9) a{left: 1237px; top: 380px;}
+#content .global_foodville .global_map .country_list li:nth-of-type(10) a{left: 1309px; top: 435px;}
+
+#content .global_foodville .global_map .global_store li{width: 600px; height: 400px;
+    position: absolute; left: 50%; top: 90px; transform: translateX(-50%); background: rgba(255, 255, 255, .7);
+    border: 1px solid #ccc; border-radius: 45px; backdrop-filter: blur(5px);
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, .5); padding: 25px; box-sizing: border-box;
+    font-size: 1.75rem; font-weight: 600; opacity: 0; transition: all .5s ease;}
+#content .global_foodville .global_map .global_store li.fade{opacity: 1; top: 30px;}
+
+#content .global_foodville .global_map .global_store li img{width: 550px; height: 300px; border-radius: 30px; margin-bottom: 10px;}
+
+#content .global_foodville .viewmore{position: absolute; left: 50%; bottom: 50px; transform: translateX(-50%);}
+
+/* 지속가능성 */
+#content .sustainability{width: 1400px; margin: 160px auto;}
+#content .sustainability .sustain_list{display: flex; flex-flow: wrap; gap: 32px; margin-top: 40px;}
+#content .sustainability li{border-radius: 40px; overflow: hidden; position: relative; transition: all .5s ease-out;}
+#content .sustainability li:hover{ box-shadow: 1px 1px 10px 1px rgba(0,0,0,.3);}
+
+#content .sustainability li div{position: absolute; left: 0; top: 0;}
+#content .sustainability li:nth-of-type(1){width: 923px; height: 311px;}
+#content .sustainability li:nth-of-type(2){width: 445px; height: 311px;}
+#content .sustainability li:nth-of-type(3){width: 445px; height: 311px;}
+#content .sustainability li:nth-of-type(4){width: 923px; height: 311px;}
+#content .sustainability li img{transition: all .5s ease-out;}
+#content .sustainability li:hover img{transform: scale(1.1); filter: brightness(80%);}
+
+#content .sustainability .sustain_txtwrap{color: #fff; margin: 32px;}
+#content .sustainability .sustain_txtwrap h4{font-size: 2.25rem; transition: all .5s ease-out;}
+#content .sustainability li:hover .sustain_txtwrap h4{transform: translate(0, 60px);}
+#content .sustainability .sustain_txtwrap p{line-height: 150%; margin-top: 145px;transition: all .5s ease-out;}
+#content .sustainability li:hover .sustain_txtwrap p{ margin-top: 80px;}
+
+/* 뉴스 */
+#content .newsroom{width: 1400px;  margin: 200px auto 0; position: relative;}
+#content .newsroom_inner{margin: 42px auto;}
+#content .newsroom .newsroom_inner ul{display: flex; gap: 32px; justify-content: space-between;}
+
+
+#content .newsroom .newsroom_inner ul a{position: relative; width: 445px; height: 345px; border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .5); transition: .5s ease;}
+#content .newsroom .newsroom_inner ul li img{width: 445px; height: 345px; border-radius: 50px;
+    transition: all .5s ease;}
+
+#content .newsroom .newsroom_inner .news_txt{width: 445px; height: 120px; border-radius: 0 0 50px 50px;
+    position: absolute; left: 0px; bottom: 0; background: #fff;
+    transition: all .5s ease;}
+#content .newsroom .newsroom_inner .news_txt div{width: 395px; height: 80px; margin: 20px 25px;}
+#content .newsroom .newsroom_inner strong{font-size: 1.38rem; font-weight: 600;
+    transition: all .5s ease;
+    display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin-bottom: 5px;}
+#content .newsroom .newsroom_inner span{color: #666; font-size: 0.88rem;
+    transition: all .5s ease;}
+
+#content .newsroom ul li a:hover{transform: scale(1.05);}
+#content .newsroom .newsroom_inner a:hover .news_txt{background: var(--font-color-main);}
+#content .newsroom .newsroom_inner a:hover strong{color: #fff;}
+#content .newsroom .newsroom_inner a:hover span{color: #ccc;}
+#content .newsroom .newsroom_inner a:hover img{transform: scale(1.05);}
+
+#content .newsroom .viewmore{position: absolute; right: 0; top: 23px;}
+
+
+
+/* 커리어 */
+#content .career{width: 100%; height: 2000px; margin: 0 auto; overflow: hidden; position: relative;}
+#content .career .career_inner{height: 600px; color: #fff; box-sizing: border-box; margin: 700px auto 250px;}
+#content .career .career_inner>div{text-align: center;}
+#content .career .career_inner strong{font-size: 3.13rem; display: block; margin: 100px 0; text-shadow: 0 2px 4px rgba(0, 0, 0, .5);}
+
+#content .career .career_inner ul{display: flex; justify-content: center; gap: 100px;}
+#content .career .career_inner ul li a{width: 450px; height: 100px; border-radius: 50px; border: 1.5px solid #fff;
+    display: flex; align-items: center; justify-content: center; color: #fff; box-sizing: border-box;
+    background: rgba(255, 255, 255, .1);  backdrop-filter: blur(10px); transition: all .5s ease;}
+#content .career .career_inner ul li a div{display: flex; gap: 20px; align-items: center; transition: all .5s ease;}
+#content .career .career_inner ul li a div h4{font-size: 1.75rem;}
+#content .career .career_inner ul li a div i{font-size: 2.5rem;}
+#content .career .career_inner ul li a p{position: absolute; font-weight: 500; text-align: center; opacity: 0; transition: all .5s ease;}
+
+#content .career .career_inner ul li a:hover{background: rgba(255, 255, 255, .4); border: none;}
+#content .career .career_inner ul li a:hover div{opacity: 0;}
+#content .career .career_inner ul li a:hover p{opacity: 1;}
+
+#content .career .bg_img{width: 100%; height: 2025px; position: absolute; left: 0; top: 0;
+    z-index: -1; background: url(../main_images/career_background1.jpg) center no-repeat;}
+#content .career .bg_img .gradient_box{width: 100%; height: 729px;
+    background: linear-gradient(180deg, #FFFFFF 30%, rgba(0, 0, 0, 0) 100%);
+    position: absolute; left: 0; top: 0;}
+
+#wrap{position: relative;}
+#footerArea{position: absolute; bottom: 0;}

@@ -1,0 +1,117 @@
+/* 온라인 문의 내용 컨텐츠 */
+
+#content .content_area{width: 1400px; margin: 0 auto 250px;}
+#content .email_box{width: 900px; height: 1570px; margin: 0 auto; border-radius: 30px; position: relative;
+    border: 1px solid #ccc; padding: 30px 50px; box-sizing: border-box;}
+#content .content_area .email_box>p{font-size: 1rem; font-weight: 500; color: var(--font-color-main);
+    position: absolute; right: 70px; top: 20px;}
+
+
+#content .email_box div{padding: 20px;}
+#content .email_box label{font-size: 1.13rem; font-weight: 600; margin-bottom: 15px; display: block;}
+#content .email_box input,
+#content .email_box select,
+#content .email_box textarea{padding: 15px 5%; width: 90%;
+    font-size: 1.13rem; border: 0; background: #f7f7f7; color: #333;
+    border-radius: 15px; outline: none; border: 1px solid #ccc;
+    transition: all .5s ease;}
+#content .email_box input:focus, #content .email_box textarea:focus,
+#content .email_box select:focus{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1); transform: scale(1.02);
+    background: #fff;}
+
+#content .email_box #message{font-family: "Noto Sans KR", sans-serif;}
+
+#content .email_box span{color: var(--font-color-main); font-size: 1rem;}
+#content .email_box span:nth-of-type(2){display: block; font-size: 0.88rem; margin-top: 5px;}
+#content .email_box textarea{height: 100px;}
+
+#content .email_box div:nth-of-type(4){position: relative;}
+#content .email_box div:nth-of-type(4) p{font-size: 0.88rem; line-height: 150%;
+    color: var(--font-color-main); font-weight: 500;}
+#content .email_box #user-brand{width: 50%;}
+
+#content .email_box div:nth-of-type(4) ul{position: absolute; right: 20px; top: 80px;
+    display: flex; gap: 20px;}
+#content .email_box div:nth-of-type(4) ul li{width: 150px; height: 54px; 
+    border-radius: 15px; border: 1px solid #ccc;
+    transition: all .5s ease;}
+#content .email_box div:nth-of-type(4) ul li:hover{cursor: pointer;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1); transform: scale(1.05);}
+
+#content .email_box div:nth-of-type(4) ul li:nth-of-type(1){
+    background: url(../images/content2/tlj_contact_off.png) center no-repeat;}
+    #content .email_box div:nth-of-type(4) ul li:nth-of-type(1):hover{background: url(../images/content2/tlj_contact.png) center no-repeat;}
+#content .email_box div:nth-of-type(4) ul li:nth-of-type(2){
+    background: url(../images/content2/vips_contact_off.png) center no-repeat;}
+#content .email_box div:nth-of-type(4) ul li:nth-of-type(2):hover{background: url(../images/content2/vips_contact.png) center no-repeat;}
+
+#content .email_box .privacy{padding: 20px 30px; border-radius: 15px;}
+#content .email_box .privacy p{font-size: 1.13rem; font-weight: 600; margin-bottom: 20px; display: block;}
+#content .email_box .privacy dl{margin-bottom: 30px;}
+#content .email_box .privacy dt{font-size: 1.1rem; font-weight: 500; margin: 10px 0;}
+#content .email_box .privacy dd{line-height: 1.65rem;}
+#content .email_box .privacy label{font-size: 1rem;}
+#content .email_box .privacy #agree{width: 20px; height: 20px;}
+#content .email_box .privacy .agree_box{padding: 0; margin-top: 10px; display: flex; gap: 10px; justify-content: right;}
+#content .email_box .privacy #agree_Y{width: 20px; height: 20px;}
+#content .email_box .privacy #agree_N{width: 20px; height: 20px; margin-left: 20px;}
+#content .email_box .privacy .privacy_info{color: var(--font-color-main); font-size: 0.9rem; margin-top: 10px;}
+
+#content .email_box button{padding: 15px 50px; color: #fff; background: var(--font-color-main);
+    font-size: 1.13rem; font-weight: 600;
+    border-radius: 15px; border: 1px solid #ccc;
+    margin: 15px auto; display: block; cursor: pointer; transition: all .3s ease;}
+#content .email_box button:hover{font-size: 1.2rem; color: #fff; background: var(--font-color-main);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1); transform: scale(1.02);}
+
+#content .email_info{margin-top: 50px;}
+#content .email_info p{margin: 20px 0;}
+#content .email_info dl{margin-bottom: 30px;}
+#content .email_info dt{font-size: 1.25rem; font-weight: 600; margin-bottom: 15px;}
+#content .email_info dd{font-weight: 500; margin-bottom: 10px;}
+
+    /* 체크박스 UI변경 */
+    input[type=checkbox] + label::before {           /* + => 친구라는 의미 */
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        border: 1px solid #999;
+        content: '';
+        margin: 0px 15px -5px 0px;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] + label {
+        cursor: pointer;
+    }
+    /* 체크박스타입의 인풋이 :checked  => 체크되면 + 라벨의 비포*/
+    input[type=checkbox]:checked + label::before {
+        background: #fff url(../../member/images/checked_bg.png) center center no-repeat;
+        border: 1px solid #e3e9fe;
+    }
+
+    /* 체크박스 UI변경 */
+    input[type=radio] + label::before {           /* + => 친구라는 의미 */
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #999;
+        content: '';
+        margin: 0px 15px -5px 0px;
+    }
+    input[type=radio] {
+        display: none;
+    }
+    input[type=radio] + label {
+        cursor: pointer;
+    }
+    /* 체크박스타입의 인풋이 :checked  => 체크되면 + 라벨의 비포*/
+    input[type=radio]:checked + label::before {
+        background: #fff url(../../member/images/checked_bg.png) center center no-repeat;
+        border: 1px solid #e3e9fe;
+    }

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드-브랜드 소개</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon">
+
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub2common.css">
+    <link rel="stylesheet" href="./css/sub2_content1.css">
+
+    <script src="https://kit.fontawesome.com/984e5d6f5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">글로벌 내비게이션 바로가기</a>
+    </div>
+
+    <div id="wrap">
+        
+        <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <img src="./common/images/visual_brands.png" alt="">
+            <strong>브랜드</strong>
+            <div class="sub_nav">
+                <ul>
+                    <li><a href="./sub2_1.html" class="current">브랜드 소개</a></li>
+                    <li><a href="./sub2_2.html">글로벌</a></li>
+                    <li><a href="./sub2_3.html">창업제안</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    HOME &gt; 브랜드 &gt; <strong>브랜드 소개</strong>
+                </div>
+                <h2>브랜드 소개</h2>
+                <p>사랑하는 사람들과의 행복한 시간을 함께 하는 곳<br>
+                    CJ푸드빌 브랜드를 소개합니다.
+                </p>
+                <div class="search_box">
+                    <label for="title" class="hidden">브랜드명</label>
+                    <input id="title" type="text" placeholder="브랜드명" list="searchList">
+                    <button id="btn" type="button">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </button>
+                    <button class="btn_all" type="button">모두보기</button>
+                    <datalist id="searchList">
+                        <option value="뚜레쥬르"></option>
+                        <option value="빕스"></option>
+                        <option value="더플레이스"></option>
+                        <option value="제일제면소"></option>
+                        <option value="더스테이크하우스"></option>
+                        <option value="N서울타워"></option>
+                        <option value="엔그릴"></option>
+                        <option value="한쿡"></option>
+                    </datalist>
+                </div>
+                
+                
+
+            </div>
+            <div class="content_area">
+                <ul class="tab_menu">
+                    <li><a href="#" class="tab tab1">베이커리</a></li>
+                    <li><a href="#" class="tab tab2">외식</a></li>
+                </ul>
+                <div class="contlist brand_content">
+
+                    <div class="brand_list">
+                        <!-- 검색 리스트 -->
+                        <!-- <ul>
+                            <li>
+                                <a>
+                                    <img src="./images/content1/brand01.jpg" alt="">
+                                    <div>
+                                        <p>건강한 데일리 베이커리</p>
+                                        <h3>뚜레쥬르</h3>
+                                        <span>→</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <img src="" alt="">
+                                    <div>
+                                        <h3></h3>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </li>
+                         </ul> -->
+                    </div>
+                    <div class="modal_box"></div>
+                    <div class="modal_box2"></div>
+
+                    <div class="popup">
+                        <div class="load">
+                            <div class="wave"></div>
+                            <img src="./images/content1/brand01.png" alt="">
+                        </div>
+                        <a href="#" class="close_pop">← 리스트로 돌아가기</a>
+                        <div class="pop_con">
+                                <!-- 팝업 내용 -->
+                                <!-- <ul>
+                                <li><img src="./images/content1/tlj_01.jpg" alt=""></li>
+                                <li><img src="./images/content1/tlj_02.jpg" alt=""></li>
+                                <li><img src="./images/content1/tlj_03.jpg" alt=""></li>
+                                </ul>
+                                <dl>
+                                <dt>
+                                    <span>건강한 데일리 베이커리</span>
+                                    뚜레쥬르
+                                </dt>
+                                <dd>
+                                    <strong>매일매일(Tous Les Jours),<br>
+                                    매장에서 직접 굽는 <span>신선한 베이커리</span></strong>
+                                </dd>
+                                <dd>
+                                    뚜레쥬르는(Tous Les Jours - 프랑스어로 '매일매일'이라는 뜻) 그 이름의 의미처럼 매일매일 매장에서 직접 구운 건강한 빵과 신선한 케이크를 선보이는 프리미엄 베이커리입니다.
+                                </dd>
+                                <dd>
+                                    엄선된 재료로 '건강함'을 추구하고 매일 매장에서 직접 구운 '신선함'을 전달하며 '친근한 경험'으로 일상의 행복을 전하는 뚜레쥬르는 2004년 미국을 시작으로 해외 약 560여 개의 매장을 운영하며 글로벌 베이커리 브랜드로서 입지를 공고히 다져가고 있습니다.
+                                </dd>
+                                </dl>
+                                <a href="#">뚜레쥬르 홈페이지 바로가기</a>
+                                <div class="pop_img_btn">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+    </div>
+
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/fullnav.js"></script>
+    <script src="./js/sam.js"></script>
+</body>
+</html>
