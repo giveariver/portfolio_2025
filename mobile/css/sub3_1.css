@@ -1,0 +1,67 @@
+.sustainability{padding-bottom: 100px;}
+
+.sustainability .title_img{position: relative;}
+.sustainability .title_img span{display: block; border-radius: 15px; overflow: hidden;}
+.sustainability .title_img span img{width: 100%; animation: sustainzoom 40s linear infinite;}
+    @keyframes sustainzoom {
+        from {transform: scale(1);}
+        to {transform: scale(1.8);}}
+
+.sustainability .title_img strong{display: block; color: #fff;
+    text-align: center; font-size: 1.3rem; width: 310px; opacity: 0;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+
+.sustainability .title_img strong:nth-of-type(1){animation: txtani 8s 0s infinite;}
+.sustainability .title_img strong:nth-of-type(2){animation: txtani 8s 4s infinite;}
+    @keyframes txtani{
+        0%   { opacity: 0; }
+        40%  { opacity: 1; }
+        60%  { opacity: 0; }
+        100% { opacity: 0; }
+    }
+
+
+.sustainability h3{font-size: 1.86rem; font-weight: 700; text-align: center; margin-bottom: 5px;}
+
+.sustainability .sub_title{height: 100px; padding: 20px 0;}
+.sustainability .sub_title h3 span{color: var(--font-color-point2);}
+
+.sustainability .sub_title>span{display: block; text-align: center; font-size: .9rem;} 
+
+.sustainability ul{display: flex; flex-wrap: wrap; justify-content: center; gap: 4%;}
+.sustainability ul li{width: 48%; height: 190px; margin-bottom: 4%;
+    border-radius: 10px; overflow: hidden; background: rgba(255, 255, 255, .8);}
+.sustainability li dl{text-align: center; width: 100%; height: 190px;}
+
+.sustainability dl dt{width: 100%; padding: 10px 0; font-size: 1.71rem; font-weight: 700; color: #fff;
+    font-family: "Montserrat", sans-serif;}
+
+.sustainability .esg_4p dl{position: relative;}
+.sustainability .esg_4p dl::after{
+    content: ""; display: block; width: 100%; height: 150px; position: absolute; left: 0; top: 45px;
+    background: linear-gradient(to top, rgba(0, 0, 0, .9) 1%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(1px); z-index: 1;
+}
+
+.sustainability dl dd{padding: 5px 0; font-weight: 500; position: relative; z-index: 2;
+    color: #fff;}
+
+.sustainability li:nth-of-type(1){background: url(../images/sub3_1/value01.jpg) center no-repeat;background-size: cover;}
+.sustainability li:nth-of-type(2){background: url(../images/sub3_1/value02.jpg) center no-repeat;background-size: cover;}
+.sustainability li:nth-of-type(3){background: url(../images/sub3_1/value03.jpg) center no-repeat;background-size: cover;}
+.sustainability li:nth-of-type(4){background: url(../images/sub3_1/value04.jpg) center no-repeat;background-size: cover;}
+
+.sustainability .esg_value dt{background: none;}
+.sustainability .esg_value dt span{display: block; font-weight: 400; font-size: 1.07rem;}
+.sustainability .esg_value dd{margin-top: 20px; font-size: 1.07rem;}
+
+.sustainability .esg_governance li{background: #fff; border: 1px solid var(--font-color-point2);
+    box-sizing: border-box;}
+
+.sustainability .esg_governance dt{background: var(--font-color-point2);
+    font-family: "Noto Sans KR", sans-serif; font-weight: 600; font-size: 1.43rem;}
+.sustainability .esg_governance dd{margin-top: 30px; font-size: 1.21rem; color: #333;}
+
+.sustainability .esg{padding: 50px 0 15px;}
+.sustainability .esg .swiper-slide{background: #fff;}
+.sustainability .esg .swiper-pagination-bullets{bottom: 0;}

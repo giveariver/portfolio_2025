@@ -1,0 +1,37 @@
+#content .content_area{padding: 0px;}
+.brands{padding-bottom: 100px;}
+.brands img{width: 100%;}
+
+.brands>ul>li{border-top: 1px solid #333;}
+
+.brands ul li .brand_title{padding: 12px 24px;
+    display: flex; justify-content: space-between; align-items: end;}
+.brands .brand_title span{font-size: .93rem; font-weight: 500;}
+.brands .brand_title h3{font-size: 1.86rem; font-weight: 700;}
+.brands .brand_title a{width: 50px; height: 50px; background: #f5f5f5; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;}
+.brands .brand_title a span{font-size: 2rem; font-weight: 300;}
+
+.brands dl{padding: 24px 24px 0; display: none;}
+.brands dl dd{text-align: justify;}
+.brands dl dd:first-of-type{text-align: left; font-weight: 500; font-size: 1.29rem; margin-bottom: 15px;}
+.brands dl dd:first-of-type span{color: var(--font-color-point1);}
+.brands dl .img_gall{width: 100%; display: flex; justify-content: space-between;
+    margin: 15px 0;}
+.brands dl .img_gall img:nth-of-type(1){width: 63%;}
+.brands dl .img_gall img:nth-of-type(2){width: 33%;}
+
+.brands .brandimg .swiper-pagination-bullet{background: rgba(255, 255, 255, .8);}
+
+.brands .brandimg .swiper-button-next,
+.brands .brandimg .swiper-button-prev{color: rgba(255, 255, 255, .8);
+    font-weight: 500;}
+.brands .brandimg .swiper-button-next::after,
+.brands .brandimg .swiper-button-prev::after{font-size: 20px;}
+.brands .brandimg .swiper-button-next{right: 0;}
+.brands .brandimg .swiper-button-prev{left: 0;}
+
+.brands .open_btn{width: 40px; height: 40px; margin: 10px auto 30px;
+    font-weight: 500; font-size: 1.5rem; text-align: center; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    background: #f5f5f5;}

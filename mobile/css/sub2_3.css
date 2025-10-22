@@ -1,0 +1,43 @@
+section{padding-bottom: 100px; display: none;}
+.contlist h4{font-size: 1.86rem; font-weight: 700;}
+.startup img{width: 100%;}
+.startup h4 span{display: block; color: #008B50;}
+.startup p{font-weight: 500; text-align: justify;}
+.startup p span{font-size: 1.14rem; color: #008B50; font-weight: 700;}
+.startup a{width: 130px; padding: 5px; border-radius: 10px; margin-top: 15px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.14rem; font-weight: 600;
+    background: #1A4A31; color: #fff;}
+.startup a span{font-size: 1.14rem; margin-top: 3px; padding-left: 10px;}
+
+.startup .starup_swp{padding: 20px 0 30px;}
+.startup .starup_swp .swiper-pagination-bullets{bottom: 8px;}
+.startup .starup_swp .swiper-pagination-bullet-active {background: #008B50;}
+.startup .starup_swp .swiper-pagination-bullet{width: 6px; height: 6px;}
+.startup .starup_swp .swiper-button-next,
+.startup .starup_swp .swiper-button-prev{color: rgba(255, 255, 255, .8); font-weight: 700;}
+
+.startup .starup_swp .swiper-button-next{right: 0;}
+.startup .starup_swp .swiper-button-prev{left: 0;}
+
+.startup .starup_swp .swiper-button-next::after,
+.startup .starup_swp .swiper-button-prev::after{font-size: 16px;}
+
+.location{margin-bottom: 50px;}
+.location>span{padding: 5px 0 10px; color: #666; display: block;}
+.location li{display: flex; gap: 4%; align-items: center; justify-content: center;
+    padding: 20px 0; border: 1px solid #ccc; border-radius: 10px; margin: 20px 0;}
+.location li div:nth-of-type(1){width: 44%;}
+.location li div:nth-of-type(2){width: 48%;}
+.location li div img{width: 100%;}
+.location li div strong{font-size: 1.14rem; font-size: 600; margin-bottom: 10px;}
+.location li div p{font-size: 1.14rem; font-size: 500;}
+.location li div span{font-size: 1.71rem; font-weight: 700;}
+
+.manager h4{padding-bottom: 15px;}
+.manager li{display: flex; align-items: center; gap: 30px;
+    font-weight: 500; padding: 20px;
+    border: 1px solid #ccc; border-radius: 10px; margin: 20px 0;}
+.manager li div strong{font-size: 1.14rem; font-size: 600; margin-bottom: 10px;}
+.manager li div p{font-size: 1.71rem; font-size: 500;}
+.manager i{font-size: 3.5rem;}

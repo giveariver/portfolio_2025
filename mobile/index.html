@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>CJ푸드빌</title>
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <script src="https://kit.fontawesome.com/984e5d6f5d.js" crossorigin="anonymous"></script>
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+        }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+    
+    
+    <div id="wrap">
+        <header id="headerArea">
+            <div class="header_top">
+                <h1><a class="logo" href="./index.html">CJ푸드빌 로고</a></h1>
+                <a href="#" class="nav_icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션영역</h2>
+
+                <ul class="member_menu">
+                    <li><a href="./login/login.html">로그인</a></li>
+                    <li><a href="./member/member_check.html">회원가입</a></li>
+                    <li><a href="https://www.cjone.com/cjmweb/oneStory.do" target="_blank" title="CJ ONE 멤버쉽 바로가기">멤버십</a></li>
+                </ul>
+                <div>
+                    <ul class="main_menu">
+                        <li class="depth1">
+                            <a class="m_title" href="#">
+                                회사소개
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </a>
+                            <ul>
+                                <li><a href="./sub1_1.html">CJ푸드빌 소개</a></li>
+                                <li><a href="./sub1_2.html">CEO 인사말</a></li>
+                                <li><a href="./sub1_3.html">연혁</a></li>
+                                <li><a href="./sub1_4.html">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a class="m_title" href="#">
+                                브랜드
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </a>
+                            <ul>
+                                <li><a href="./sub2_1.html">브랜드 소개</a></li>
+                                <li><a href="./sub2_2.html">글로벌</a></li>
+                                <li><a href="./sub2_3.html">창업제안</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a class="m_title" href="#">
+                                지속가능경영
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </a>
+                            <ul>
+                                <li><a href="./sub3_1.html">지속가능경영</a></li>
+                                <li><a href="./sub3_2.html">윤리경영</a></li>
+                                <li><a href="./sub3_3.html">상생경영</a></li>
+                                <li><a href="./sub3_4.html">안전경영</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a class="m_title" href="#">
+                                인재채용
+                                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                            </a>
+                            <ul>
+                                <li><a href="./sub4_1.html">직무소개</a></li>
+                                <li><a href="./sub4_2.html">간편지원</a></li>
+                                <li><a href="./sub4_3.html">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <a class="brand_site_btn" href="#">
+                        BRAND SITE
+                        <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                    </a>
+
+                    <ul class="brand_site">
+                        <li><a href="https://www.tlj.co.kr/" target="_blank">Tous les Jours ↗</a></li>
+                        <li><a href="https://www.ivips.co.kr/" target="_blank">VIPS ↗</a></li>
+                        <li><a href="https://www.italiantheplace.co.kr:7022/theplace_end.asp" target="_blank">THE PLACE ↗</a></li>
+                        <li><a href="https://www.cheiljemyunso.co.kr:7014/the_end.asp" target="_blank">제일제면소 ↗</a></li>
+                        <li><a href="https://www.nseoultower.co.kr/visit/restaurant.asp" target="_blank">n·GRILL ↗</a></li>
+                        <li><a href="https://www.nseoultower.co.kr/" target="_blank">N SEOULTOWER ↗</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+
+        <div class="visual">
+            <div class="swiper-container swiper1">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="./images/main/visual_01_2x.jpg" alt="">
+                        <p>모두에게<br> 행복한 장소가 되는 곳</p>
+                        <p>Happy Place for Everyone</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/main/visual_02_2x.jpg" alt="">
+                        <p>전세계를 감동시킬<br> 우리의 맛과 멋</p>
+                        <p>Globalization of Korean Food Culture</p>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/main/visual_03_2x.jpg" alt="">
+                        <p>건강한 맛과<br> 행복한 서비스</p>
+                        <p>Heartfelt Service with Health Foods</p>
+                    </li>
+                </ul>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+
+
+        <article id="content">
+            <h2 class="hidden">본문콘텐츠영역</h2>  
+            
+            
+            <div class="slogan">
+                <div>
+                    <strong>CJ푸드빌은 건강한 맛</strong>
+                    <span><img src="./images/main/message01_2x.jpg" alt=""></span>
+                    <strong>과</strong>
+                </div>
+                <div>
+                    <strong>정성스런 서비스</strong>
+                    <span><img src="./images/main/message02_2x.jpg" alt=""></span>
+                    <strong>를 제공함으로써</strong>
+                </div>
+                <div><strong>모두에게 행복한 장소를 만들어 나가고자 합니다.</strong></div>
+            </div>
+
+
+            <section class="about_us">
+                <div class="sec_title" data-aos="fade-up" data-aos-duration="700">
+                    <h3>ABOUT US</h3>
+                    <p>글로벌 외식문화 기업의 시작을 열다</p>
+                </div>
+                <span data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
+                    <img src="./images/main/about_2x.png" alt="">
+                </span>
+                <div class="about_us_txt" data-aos="fade-up" data-aos-duration="700">
+                    <div class="swiper-container swiper_about">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                    <div>
+                                        <strong>건강하고 즐거운 식문화를 만드는 <br> GLOBAL F&B COMPANY</strong>
+                                        CJ푸드빌은 ‘새로운 식문화의 세계를 창조한다(Create the world of New Food Culture)’는 원대한 꿈과 비전을
+                                        CJ의 경영철학인 최초, 최고, 차별화를 추구하는 온리원(Only One)정신에 맞게 실현, 구체화하고 있습니다.
+                                    </div>
+                            </li>
+                        
+                            <li class="swiper-slide">
+                                    <div>
+                                        <strong>Create the world <br>of New Food Culture</strong>
+                                        CJ푸드빌은 ‘새로운 식문화의 세계를 창조한다(Create the world of New Food Culture)’는 원대한 꿈과 비전을
+                                        CJ의 경영철학인 최초, 최고, 차별화를 추구하는 온리원(Only One)정신에 맞게 실현, 구체화하고 있습니다.
+                                    </div>
+                            </li>
+                        
+                            <li class="swiper-slide">
+                                    <div>
+                                        <strong>가족 이상의 감동 서비스를<br> 전달하는 외식공간</strong>
+                                        CJ푸드빌은 Food(음식)와 Village(마을)의 합성어로 한 마을에 사는 가족과 이웃들이 단란한 식사공간을 통해
+                                        행복과 사랑을 나누듯이 편안하고 부담 없이 즐길 수 있는 가족 레스토랑을 지향한다는 의미가 담겨 있습니다.
+                                    </div>
+                            </li>
+                        </ul>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <a class="viewmore" href="./sub1_1.html" data-aos="fade-left" data-aos-duration="500">
+                        <span class="view_txt">VIEW MORE</span>
+                        <div class="circle">
+                            <span class="material-symbols-outlined view_arrow">
+                            arrow_forward
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="brands">
+                <div class="sec_title" data-aos="fade-up" data-aos-duration="700">
+                    <h3>BRANDS</h3>
+                    <p>사랑하는 사람들과 행복한 시간을 함께 하는 곳</p>
+                </div>
+                <div class="brands_con" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="500">
+                    <span class="circle_bg"></span>
+                    <div class="swiper-container brands_list">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div>
+                                    <div class="brand_img">
+                                        <img src="./images/main/brands_01_2x.jpg" alt="">
+                                        <ul>
+                                            <li>건강한 데일리 베이커리</li>
+                                            <li>매일매일</li>
+                                            <li>케이크 맛집</li>
+                                        </ul>
+                                    </div>
+                                    <div class="brand_txt">
+                                        <dl>
+                                            <dt>뚜레쥬르</dt>
+                                            <dd>뚜레쥬르는 날마다 매장에서 직접 구운 건강한 빵과 신선한 케이크를 선보이는 프리미엄 베이커리 브랜드입니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub2_1.html">
+                                            
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <div class="brand_img">
+                                        <img src="./images/main/brands_02_2x.jpg" alt="">
+                                        <ul>
+                                            <li>프리미엄 스테이크</li>
+                                            <li>시즈널 샐러드바</li>
+                                        </ul>
+                                    </div>
+                                    <div class="brand_txt">
+                                        <dl>
+                                            <dt>빕스</dt>
+                                            <dd>빕스는 프리미엄 스테이크와
+                                                계절마다 변하는 다채롭고 신선한 샐러드바로
+                                                국내 외식 업계를 선도해왔습니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub2_1.html">
+                                            
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <div class="brand_img">
+                                        <img src="./images/main/brands_03_2x.jpg" alt="">
+                                        <ul>
+                                            <li>이탈리안 비스트로</li>
+                                            <li>밀라노 스타일</li>
+                                            <li>화덕피자</li>
+                                        </ul>
+                                    </div>
+                                    <div class="brand_txt">
+                                        <dl>
+                                            <dt>더플레이스</dt>
+                                            <dd>더 플레이스는 정통 이탈리안을 현대적으로
+                                                재해석한 트렌디한 이탈리안 비스트로입니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub2_1.html">
+                                            
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <div class="brand_img">
+                                        <img src="./images/main/brands_04_2x.jpg" alt="">
+                                        <ul>
+                                            <li>제철국수</li>
+                                            <li>한식 일품요리</li>
+                                            <li> 특색있는 육수</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="brand_txt">
+                                        <dl>
+                                            <dt>제일제면소</dt>
+                                            <dd>국수는 우리에게 너무 친숙한 한 끼지만,
+                                                제일제면소는 조금 더 특별함을 선사하고 싶었습니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub2_1.html">
+                                            
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <div class="brand_img">
+                                        <img src="./images/main/brands_05_2x.jpg" alt="">
+                                        <ul>
+                                            <li>하이엔드 스테이크 다이닝</li>
+                                            <li>스페셜 메뉴</li>
+                                            <li>뉴 클래식</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="brand_txt">
+                                        <dl>
+                                            <dt>더스테이크하우스</dt>
+                                            <dd>차별화된 스테이크와
+                                                다채로운 해산물, 하우스 스페셜 메뉴가 있는 프리미엄 스테이크 하우스입니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub2_1.html">
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <div class="brand_img">
+                                        <img src="./images/main/brands_06_2x.jpg" alt="">
+                                        <ul>
+                                            <li>서울의 대표 랜드마크</li>
+                                            <li>해발 480m</li>
+                                            <li>복합문화공간</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="brand_txt">
+                                        <dl>
+                                            <dt>N서울타워</dt>
+                                            <dd>
+                                                남산의 자연과 전망 그리고 F&B, 엔터테인먼트, 쇼핑 등
+                                                CJ그룹의 역량이 조화롭게 어우러진 복합문화공간입니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub2_1.html">
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <div class="brand_img">
+                                        <img src="./images/main/brands_07_2x.jpg" alt="">
+                                        <ul>
+                                            <li>360도 회전전망</li>
+                                            <li>국내유일</li>
+                                            <li>프렌치코스</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="brand_txt">
+                                        <dl>
+                                            <dt>엔그릴</dt>
+                                            <dd>
+                                                N서울타워에서도 가장 높은 자리에 위치한 엔그릴은
+                                                서울의 전경을 360도 즐길 수 있는 국내 유일의 레스토랑입니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub2_1.html">
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div>
+                                    <div class="brand_img">
+                                        <img src="./images/main/brands_08_2x.jpg" alt="">
+                                        <ul>
+                                            <li>모던 한우그릴</li>
+                                            <li>풍미절정</li>
+                                            <li>남산 꼭대기</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="brand_txt">
+                                        <dl>
+                                            <dt>한쿡</dt>
+                                            <dd>
+                                                남산 꼭대기에서 즐기는 풍미 절정의 모던 한우 그릴
+                                                한쿡만의 섬세한 그릴 방식으로 깊이 있는 맛의 여운을 만들어냅니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub2_1.html">
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sustainability">
+                <div class="sec_title" data-aos="fade-up" data-aos-duration="700">
+                    <h3>SUSTAINABILITY</h3>
+                    <p>우리와 지구의 더 나은 내일을 위한 SUSTAINABLE F&B 생태계 조성</p>
+                </div>
+
+                <div class="sustain_con" data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="500">
+                    <div class="swiper-container swiper_sustain">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div>
+                                    <img src="./images/main/sustain_01_2x.jpg" alt="">
+                                    <div class="sustain_txt">
+                                        <dl>
+                                            <dt>지속가능경영</dt>
+                                            <dd>CJ푸드빌은 'ESG경영 리더'로 자리매김 하기 위해 4P 추구가치에 기반한 ESG 전략과제를 수행하고 '미래혁신성장'과 '지속가능발전' 구조를 정립하겠습니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub3_1.html">
+                                            <span class="view_txt">VIEW MORE</span>
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="swiper-slide">
+                                <div>
+                                    <img src="./images/main/sustain_02_2x.jpg" alt="">
+                                    <div class="sustain_txt">
+                                        <dl>
+                                            <dt>윤리경영</dt>
+                                            <dd>준법·윤리경영을 지속가능한 성장의 출발점이자 우리의 가치로 인식하며,  준법·윤리경영 문화 확산과 글로벌 컴플라이언스 체계 강화를 위한 노력을 멈추지 않겠습니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub3_2.html">
+                                            <span class="view_txt">VIEW MORE</span>
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div>
+                                    <img src="./images/main/sustain_03_2x.jpg" alt="">
+                                    <div class="sustain_txt">
+                                        <dl>
+                                            <dt>상생/나눔경영</dt>
+                                            <dd>F&B 業(업) 특성과 연계한 사회공헌 활동을 통해
+                                                지역사회 발전에 기여하고자 합니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub3_3.html">
+                                            <span class="view_txt">VIEW MORE</span>
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div>
+                                    <img src="./images/main/sustain_04_2x.jpg" alt="">
+                                    <div class="sustain_txt">
+                                        <dl>
+                                            <dt>안전경영</dt>
+                                            <dd>고객과 임직원의 안전을 위해
+                                                무엇과도 타협하지 않는 안전문화를 실천합니다.</dd>
+                                        </dl>
+                                        <a class="viewmore" href="./sub3_4.html">
+                                            <span class="view_txt">VIEW MORE</span>
+                                            <div class="circle">
+                                                <span class="material-symbols-outlined view_arrow">
+                                                arrow_forward
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="career">
+                <div class="sec_title" data-aos="zoom-in" data-aos-duration="1000">
+                    <h3>CAREER</h3>
+                    <p>전 직무를 대상으로 우수 인력을 상시 채용하고 있습니다</p>
+                </div>
+                <div class="career_con" data-aos="zoom-in" data-aos-duration="1000">
+                    <p>가장 일하고 싶은 F&B 기업 CJ푸드빌과 함께<br>
+                        미래혁신을 만들어 갈 최고 인재를 기다립니다.</p>
+                    <ul>
+                        <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"><a href="./sub4_1.html">
+                            <span class="material-symbols-outlined">
+                                account_box
+                            </span>
+                            직무소개 바로가기
+                        </a></li>
+                        <li data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600"><a href="#" download="cjfoodvilleRecruit.zip">
+                            <span class="material-symbols-outlined">
+                                download
+                            </span>
+                            이력서 다운로드
+                        </a></li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <footer id="footerArea">
+            <a class="top_move" href="#"><span>↑</span></a>
+            <div class="footer_inner">
+                <img class="footer_logo" src="./images/common/footer_logo_2x.png" alt="">
+                <address>
+                    <span>CJ푸드빌(주)</span> <br>
+                    서울시 중구 마른내로34 KT&amp;G 을지로타워 3, 9-11층 (우)04555<br>
+                    <span>사업자등록번호:</span> 312-81-42519<br>
+                    <span>대표이사:</span> 김찬호 | <span>개인정보보호책임자:</span> 김재완<br>
+                    <span>고객센터:</span> 1577-0700 | <span>팩스:</span> 02-6740-4349 <br>
+                    <span>이메일:</span> help_master@cj.net
+                </address>
+                <ul class="bottom_menu">
+                    <li><a href="../../member/member_check.html">이용약관 |&nbsp;</a></li>
+                    <li><a href="#">위치기반서비스 이용약관 |&nbsp;</a></li>
+                    <li><a href="../../member/member_check.html">개인정보처리방침 |&nbsp;</a></li>
+                    <li><a href="#">영상정보처리기기 운영관리방침 |&nbsp;</a></li>
+                    <li><a href="#">이메일 무단수집거부 |&nbsp;</a></li>
+                    <li><a href="#">법적고지</a></li>
+                </ul>
+                
+                
+                <ul class="sns">
+                    <li>
+                        <a href="https://www.linkedin.com/company/cjfoodville/posts/?feedView=all&viewAsMember=true" title="Linkedein 새창열림" target="_blank">
+                            <img src="./images/common/sns01_2x.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/cjfv_recruit" title="채용 인스타그램 새창열림" target="_blank">
+                            <img src="./images/common/sns02_2x.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://pf.kakao.com/_PBJxas/chat" title="카카오톡 채널(문의하기) 새창열림" target="_blank">
+                            <img src="./images/common/sns03_2x.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://cjfvrecruit.notion.site/CJ-1ba759d67332804e9f45d457c4ea7421?pvs=4" title="Notion(브랜드,복리후생 소개) 새창열림" target="_blank">
+                            <img src="./images/common/sns04_2x.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="familysite">
+                    <a class="family_btn" href="#">FAMILY SITE <span>+</span></a>
+                    <div class="family_list">
+                        <ul>
+                            <li><p>CJ그룹</p>
+                                <ul>
+                                    <li><a href="https://www.cj.net/" target="_blank" title="CJ주식회사 사이트 새창에 열림">CJ주식회사</a></li>
+                                </ul>
+                            </li>
+                            <li><p>식품 &amp; 식품서비스</p>
+                                <ul>
+                                    <li><a href="https://www.cj.co.kr/kr/" target="_blank" title="CJ제일제당 사이트 새창에 열림">CJ제일제당</a></li>
+                                    <li><a href="#" target="_blank" title="CJ푸드빌 사이트 새창에 열림">CJ푸드빌</a></li>
+                                    <li><a href="https://www.cjfreshway.com/" target="_blank" title="CJ프레시웨이 사이트 새창에 열림">CJ프레시웨이</a></li>
+                                </ul>
+                            </li>
+                            <li><p>생명공학</p>
+                                <ul>
+                                    <li><a href="https://cjbio.net/ko/" target="_blank" title="CJ제일제당 BIO사업부문 사이트 새창에 열림">CJ제일제당 BIO사업부문</a></li>
+                                    <li><a href="https://www.cj.co.kr/kr/aboutus/business/cjfeedncare" target="_blank" title="CJ Feed&amp;Care 사이트 새창에 열림">CJ Feed&amp;Care</a></li>
+                                    <li><a href="https://www.cjbioscience.com/" target="_blank" title="CJ바이오사이언스 사이트 새창에 열림">CJ바이오사이언스</a></li>
+                                    <li><a href="https://cjbiomaterials.com/" target="_blank" title="CJ Biomaterials 사이트 새창에 열림">CJ Biomaterials</a></li>
+                                </ul>
+                            </li>
+                            <li><p>물류 &amp; 신유통</p>
+                                <ul>
+                                    <li><a href="https://www.cjlogistics.com/ko/" target="_blank" title="CJ대한통운 사이트 새창에 열림">CJ대한통운</a></li>
+                                    <li><a href="https://www.cjenc.co.kr/kr/" target="_blank" title="CJ대한통운 건설부문 사이트 새창에 열림">CJ대한통운 건설부문</a></li>
+                                    <li><a href="https://corp.oliveyoung.com/ko" target="_blank" title="CJ올리브영 사이트 새창에 열림">CJ올리브영</a></li>
+                                    <li><a href="https://www.cjolivenetworks.co.kr/" target="_blank" title="CJ올리브네트웍스 사이트 새창에 열림">CJ올리브네트웍스</a></li>
+                                    <li><a href="https://company.cjonstyle.com/" target="_blank" title="CJ ENM 커머스부문 사이트 새창에 열림">CJ ENM 커머스부문</a></li>
+                                </ul>
+                            </li>
+                            <li><p>CJ그룹</p>
+                                <ul>
+                                    <li><a href="https://www.cjenm.com/ko/" target="_blank" title="CJ ENM 엔터테인먼트부문 사이트 새창에 열림">CJ ENM 엔터테인먼트부문</a></li>
+                                    <li><a href="https://corp.cgv.co.kr/?lang=kr" target="_blank" title="CJ CGV 사이트 새창에 열림">CJ CGV</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copy">
+                    Copyright &copy;CJ Foodville, All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    
+    
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+
+</body>
+</html>
+
+

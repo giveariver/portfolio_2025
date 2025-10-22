@@ -1,0 +1,12 @@
+.content_area{padding-bottom: 100px;}
+.content_area #map{width: 100%; height: 300px;
+    margin-bottom: 30px;}
+
+.content_area dl{width: 300px; padding: 20px 0; margin: 0 auto;}
+.content_area dt{font-weight: 700; font-size: 1.21rem; margin-bottom: 15px;}
+.content_area dd strong{display: block; font-size: 1.14rem; font-weight: 600; margin-bottom: 5px;}
+.content_area dd{padding: 0 5px; font-size: 1.07rem; margin: 10px 0;}
+
+.content_area dl:nth-of-type(2){border-bottom: 1px solid #333; border-top: 1px solid #333;}
+
+

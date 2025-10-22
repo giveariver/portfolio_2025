@@ -1,0 +1,43 @@
+body{background-color: #eee; font-size: 1.14rem;}
+h1 a{margin: 50px auto 0; display: block; width: 110px; height: 51px; text-indent: -9999px; overflow: hidden;
+    background: url(../../images/common/logo_b.png) center no-repeat;}
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2){
+        h1 a{
+            background: url(../../images/common/logo_b_2x.png) center no-repeat;
+            background-size: 110px 51px;
+        }
+    }
+
+#content{width: 95%; margin: 30px auto; background: #fff; box-sizing: border-box;
+     border-radius: 15px;
+     padding: 12px 12px; font-family: 'Noto Sans KR', sans-serif; font-weight: 500;}
+#content h2{font-size: 1.43rem; font-weight: 500; margin-bottom: 3px;}
+#content p{color: #666; font-weight: 400; font-size: .82rem;}
+
+#content form{margin-top: 20px;}
+#content form label{font-size: 1rem; display: block; margin-bottom: 5px;}
+#content form input{border: 1px solid #ddd; width: 100%; height: 50px; border-radius: 7px; 
+    margin-bottom: 10px; padding: 0 20px; box-sizing: border-box;}
+#content form input::placeholder{font-family: 'Noto Sans KR', sans-serif; color: #ddd;}
+
+#content form input[type=submit]{margin-top: 15px; margin-bottom: 5px; font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.21rem; border: 0; background: var(--font-color-main); color: #fff; font-weight: 500; height: 60px;
+    cursor: pointer;}
+#content form input:focus{outline-color: var(--font-color-main);}
+
+#content div:nth-of-type(1){margin-left: 15px; display: flex; justify-content: center;}
+#content div:nth-of-type(1) a{font-weight: 400; color: #999; text-align: center;
+    padding: 10px 15px; box-sizing: border-box;}
+
+    #content div:nth-of-type(1) a:last-of-type{position: relative;}
+    #content div:nth-of-type(1) a:last-of-type::after{content: "";
+        background: #999; display: block; width: 1px; height: 20px;
+        position: absolute; left: 0; top: 50%; transform: translateY(-43%);}
+
+#content p:nth-of-type(2){text-align: center; font-size: .9rem; margin: 10px 0 5px; color: #555;}
+
+#content div:nth-of-type(2){width: 100%; text-align: center; margin: 15px 0;}
+#content div:nth-of-type(2) span{color: #666; }
+
+#content div:nth-of-type(2) a{display: inline; color: var(--font-color-main);}

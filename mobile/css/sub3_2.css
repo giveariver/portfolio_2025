@@ -1,0 +1,72 @@
+section{padding-bottom: 100px; display: none;}
+.ceo>strong{text-align: center; font-size: 1.1rem; display: block; line-height: 150%;}
+.ceo img{width: 100%; margin-bottom: 20px;}
+.ceo .ceo_message_txt{font-weight: 500; padding: 0 12px;}
+.ceo .ceo_message_txt span{font-weight: 600; display: block;}
+.ceo .ceo_message_txt p{margin: 20px 0;  text-align: justify;}
+.ceo .ceo_message_txt p:last-of-type{text-align: right;}
+.ceo .ceo_txt01{text-align: center; font-size: 1.21rem; font-weight: 600;}
+.ceo .ceo_txt01>strong{font-weight: 700; font-size: 1.36rem;}
+.ceo .ceo_txt01>strong:nth-of-type(1){color: var(--font-color-main);}
+.ceo .ceo_txt01>strong:nth-of-type(2){color: var(--font-color-point1);}
+.ceo .ceo_txt01 span{display: block; font-size: 3rem; color: #ddd;}
+
+.ceo .ceo_txt01 span:first-of-type{margin-bottom: -20px;}
+
+
+.cj_promise h3{font-size: 1.86rem; font-weight: 700;}
+.cj_promise p{font-weight: 500; margin: 20px 0;  text-align: justify;}
+.cj_promise p:nth-of-type(2){color: var(--font-color-main); margin-bottom: 30px;}
+
+.cj_promise ul li{margin-bottom: 20px;}
+.cj_promise ul li>img{width: 40px; height: 40px; padding: 15px 0 10px;}
+.cj_promise dt{font-size: 1.21rem; font-weight: 600; padding-bottom: 10px; border-bottom: 2px solid #333;}
+.cj_promise dd{margin: 20px 0; font-size: .86rem; font-weight: 500;}
+.cj_promise dd img{width: 15px; height: 15px; margin-top: 2.5px; padding-right: 1px;}
+
+.cj_promise h4{font-size: 1.57rem; font-weight: 700; margin: 70px 0 30px;}
+
+.cj_promise .promise_pdf{display: flex; flex-wrap: wrap; gap: 6%;}
+.cj_promise .promise_pdf li{width: 47%; box-sizing: border-box;
+    border: 1px solid #999; padding: 15px 5px 5px; border-radius: 10px;}
+.cj_promise .promise_pdf li strong{display: block; text-align: center;
+    font-size: 1.14rem; margin-bottom: 20px;}
+
+.cj_promise .promise_pdf li a{font-size: 1.21rem; border-radius: 5px;
+    display: flex; gap: 8px; justify-content: center;
+    background: #eee; font-weight: 500;
+    padding: 20px 0; margin: 10px;}
+.cj_promise .promise_pdf li a img{width: 20px;}
+
+
+.ethics_list .ethics_gall_wrap>li{position: relative;}
+.ethics_list .ethics_gall_wrap>li>span{font-family: "Montserrat", sans-serif;
+    font-size: 1.86rem; font-weight: 700; display: block;
+    position: absolute; left: 0; top: 0;}
+.ethics_list .ethics_gall_wrap>li .month{position: absolute; right: 0; top: 2.4px;
+    width: 100%; font-size: 1.71rem; text-align: right; color: var(--font-color-main);
+    border-bottom: 1px solid #333;}
+
+    
+.ethics_list .ethics_gall li{font-weight: 600; text-align: center;}
+.ethics_list .ethics_gall span{font-size: .86rem; font-weight: 400; padding: 5px 0;}
+.ethics_list .ethics_gall{padding: 40px 0 20px 30px;}
+.ethics_list .ethics_gall_wrap>li:first-of-type .ethics_gall{padding: 40px 0 50px 30px;}
+.ethics_list .ethics_gall img{width: 100%; padding: 15px 0;}
+
+
+.ethics_list .ethics_rules h4{font-size: 1.86rem; font-weight: 700; margin: 70px 0 30px;}
+
+.ethics_list .ethics_rules ul{display: flex; flex-wrap: wrap; gap: 6%;}
+.ethics_list .ethics_rules li{width: 47%; box-sizing: border-box; margin-bottom: 20px;
+    border: 1px solid #999; padding: 15px 5px 5px; border-radius: 10px;}
+.ethics_list .ethics_rules li strong{display: block; text-align: center;
+    font-size: 1.14rem; margin-bottom: 20px;}
+
+.ethics_list .ethics_rules li a{font-size: 1.21rem; border-radius: 5px;
+    display: flex; gap: 8px; justify-content: center;
+    background: #eee; font-weight: 500;
+    padding: 20px 0; margin: 10px;}
+.ethics_list .ethics_rules li a img{width: 20px;}
+
+

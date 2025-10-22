@@ -1,0 +1,27 @@
+/* faq 내용 컨텐츠 */
+.faq{width:100%; padding-bottom: 100px;}  
+.faq .open{text-align: right; margin: 0 10px 20px 0;}   
+
+.faq li{border-bottom: 3px solid #ddd; border-radius: 15px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1); margin-bottom: 20px; overflow: hidden;}  
+
+.faq .q{position: relative;}
+.faq .q .trigger{padding:10px 10px 15px; background :#f5f5f5;font-weight: 500; transition: all .3s ease;}  
+.faq .hide .q .trigger{display: block; background:none}
+
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{background:#f5f5f5; font-weight: 700;}
+
+.faq span{display: block; font-size: 1.43rem; color: #ddd; font-weight: 600;
+    margin-bottom: 5px; transition: all .5s ease;}
+
+/* .faq .q .trigger:hover span,  
+.faq .q .trigger:active span,  
+.faq .q .trigger:focus span{color: var(--font-color-main);}   */
+
+.faq .q .arrow{display: block; position: absolute; right: 15px; top:10px; color: var(--font-color-main); opacity: .9;} 
+.faq .a{padding: 10px; line-height: 1.5; display: none; background: #f5f5f5;
+    border-top: 1px solid #ccc;}
+
+.faq .a span{color: var(--font-color-point2);}

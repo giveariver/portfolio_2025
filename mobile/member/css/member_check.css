@@ -1,0 +1,55 @@
+body{background-color: #eee;}
+h1 a{margin: 50px auto 0; display: block; width: 110px; height: 51px; text-indent: -9999px;
+    overflow: hidden;
+    background: url(../../images/common/logo_b.png) center no-repeat;}
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2){
+        h1 a{
+            background: url(../../images/common/logo_b_2x.png) center no-repeat;
+            background-size: 110px 51px;
+        }
+    }
+
+#content{width: 95%; margin: 30px auto; background: #fff; box-sizing: border-box;
+    border-radius: 15px;
+    padding: 20px 12px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400;}
+
+    .join{text-align: left; position: relative;}
+    .join h4{font-size: 1.43rem;font-weight: 500; margin: 20px 0; color: #333;}
+    .join h3{font-size: 1.86rem;font-weight: 600; color: #333; text-align: center; position: relative;}
+    
+   
+    .join .policy{padding: 10px; overflow-y: scroll; height: 150px; margin-bottom: 20px; border: 1px solid #ddd;
+        background: #fff; font-size: 1rem; line-height: 1.5em; color: #666;}
+    .join .check{color: #333; margin: 20px 0 40px; font-weight: 500;}
+
+    .join .button{text-align: center; margin-top: 30px}
+    .join .button .ok,.join .button button,.join .allcheck{display: inline-block;
+        width: 150px;line-height: 50px; height: 50px; padding: 8px 0;border: none;
+        background: var(--font-color-main); color: #fff;font-size: 1.1em;cursor: pointer;
+        margin: 0 5px;}
+
+    .join .allcheck{background: transparent; border: 1px solid var(--font-color-main); color: var(--font-color-main);} 
+
+
+    /* 체크박스 UI변경 */
+    input[type=checkbox] + label::before {           /* + => 친구라는 의미 */
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        border: 1px solid #999;
+        content: '';
+        margin: 0px 10px -5px 0px;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] + label {
+        cursor: pointer;
+    }
+    /* 체크박스타입의 인풋이 :checked  => 체크되면 + 라벨의 비포*/
+    input[type=checkbox]:checked + label::before {
+        background: #fff url(../images/checked_bg.png) center center no-repeat;
+        border: 1px solid #e3e9fe;
+    }

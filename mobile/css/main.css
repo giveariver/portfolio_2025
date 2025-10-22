@@ -1,0 +1,135 @@
+/* index css */
+
+/* 비주얼 */
+.visual .swiper1{width: 100%; height: auto;}
+                                /* 스와이퍼 높이 값이 유동이면 auto, 고정이면 px값 */
+
+
+.visual .swiper1 .swiper-slide img{width: 100%; animation: galleryzoom 30s linear infinite;}
+
+@keyframes galleryzoom {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+.visual .swiper1 .swiper-slide p{color: #fff; width: 100%;
+    position: absolute;}
+.visual .swiper1 .swiper-slide p:nth-of-type(1){font-size: 2.3rem; font-weight: 700;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+    left: 5%; bottom: 20%;}
+.visual .swiper1 .swiper-slide p:nth-of-type(2){font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem; font-weight: 400;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+    left: 6%; bottom: 15%;}
+
+.visual .swiper1 .swiper-pagination-bullets{bottom: 40px; width: 100%;}
+.visual .swiper1 .swiper-pagination-bullet{background: #fff;}
+.visual .swiper1 .swiper-pagination-bullet-active {background: #fff;}
+
+.visual .swiper1 .swiper-button-next,
+.visual .swiper1 .swiper-button-prev{color: rgba(255, 255, 255, .1); font-weight: 700; top: auto; bottom: 26px;}
+
+.visual .swiper1 .swiper-button-next{right: 35%;}
+.visual .swiper1 .swiper-button-prev{left: 35%;}
+
+.visual .swiper1 .swiper-button-next::after,
+.visual .swiper1 .swiper-button-prev::after{font-size: 16px;}
+
+
+/* 컨텐츠영역 */
+#content .sec_title{text-align: center;}
+#content .sec_title h3{font-size: 2rem; font-family: "Montserrat", sans-serif; font-weight: 700;}
+#content .sec_title p{font-size: .8rem; margin-bottom: 20px;}
+
+#content .viewmore{display: flex; gap: 10px; align-items: center;}
+#content .viewmore .circle{border: 1px solid #333; border-radius: 50%; box-sizing: border-box;
+     display: flex; align-items: center; justify-content: center;}
+#content .viewmore .view_txt{font-weight: 500; font-size: 1.14rem; font-family: "Montserrat", sans-serif;}
+#content .viewmore .view_arrow{font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24}
+
+section{padding: 50px 0;}
+    
+/* 슬로건 */
+.slogan{text-align: center; padding: 100px 16px; font-size: 1.21rem;}
+.slogan div{display: flex; justify-content: center; align-items: center; transition: all .5s ease;}
+.slogan div img{width: 0;  height: 25px; border-radius: 12.5px;
+    transform: scaleX(0); /* 처음에는 안 보이게 */
+    transform-origin: center; /* 중앙 기준으로 확대 */ 
+    transition: all .5s ease;}
+
+/* 회사소개 */
+.about_us{padding: 50px 8px;}
+
+.about_us img{width: 100%; border-radius: 15px; margin-bottom: 20px;}
+.about_us .about_us_txt{text-align: center; position: relative; margin-bottom:40px;}
+.about_us .about_us_txt strong{display: block; font-size: 1.43rem; margin-bottom: 14px;}
+
+.about_us .about_us_txt .swiper_about{height: auto;}
+.about_us .about_us_txt .swiper_about .swiper-slide{background: #fff;}
+.about_us .about_us_txt .swiper_about .swiper-slide div{padding: 0 12px 30px;}
+.about_us .about_us_txt .swiper_about .swiper-pagination-bullets{bottom: 0; width: 100%;}
+.about_us .about_us_txt .swiper_about .swiper-pagination-bullet{background: #333;}
+.about_us .about_us_txt .swiper_about .swiper-pagination-bullet-active {background: #333;}
+.about_us .about_us_txt .viewmore{justify-content: center; padding-top: 20px;}
+
+
+/* 브랜드 */
+.brands .brands_con{position: relative;}
+.brands .circle_bg{display: block; width: 200%; aspect-ratio: 2 / 1;
+    border-radius: 50%; background: #0C4630; transition: all .5s ease;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%);}
+.brands .brands_list{padding-top: 1px;}
+.brands .brands_list .swiper-slide>div{padding: 0 45px; color: #fff; }
+.brands .brands_list .brand_img{ position: relative;}
+.brands .brands_list .brand_img img{width: 100%; border-radius: 30px; box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .3);}
+.brands .brands_list .brand_img ul{position: absolute; left: 5%; bottom: 5%;
+    width: 75%; display: flex; flex-wrap: wrap; gap: 7px;}
+.brands .brands_list .brand_img ul li{padding: 7px 10px; background: rgba(0, 0, 0, .4); border-radius: 20px;
+    font-weight: 500; backdrop-filter: blur(2px);}
+
+.brands .brands_list .brand_txt{position: relative;}
+
+.brands .brands_list .brand_txt dl dt{font-size: 1.71rem; font-weight: 600; padding: 10px 0;
+    border-bottom: 1px solid #fff;}
+.brands .brands_list .brand_txt dl dd{padding: 10px 0;}
+.brands .brands_list .viewmore{color: #fff; position: absolute; right: 0; top: 12%;}
+#content .brands .brands_list .viewmore .circle{border: 1px solid #fff;}
+
+.brands .brands_list .swiper-button-next,
+.brands .brands_list .swiper-button-prev{color: #ddd; font-weight: 700; top: 30%;}
+
+.brands .brands_list .swiper-button-next::after,
+.brands .brands_list .swiper-button-prev::after{font-size: 3.5vh;}
+
+/* 지속가능경영 */
+.sustainability{background: #fff; position: relative; z-index: 10; padding-bottom: 60px;}
+.sustainability .swiper_sustain .swiper-slide>div{color: #fff; position: relative;}
+    
+.sustainability .swiper_sustain .swiper-slide>div img{width: 100%; border-radius: 30px;}
+.sustainability .swiper_sustain .sustain_txt{box-sizing: border-box; display: flex; flex-direction: column; height: 200px;
+    position: absolute; left: 0; bottom: 0; padding: 15px;}
+.sustainability .swiper_sustain .sustain_txt dl{text-shadow: 0 2px 3px rgba(0, 0, 0, .3);}
+.sustainability .swiper_sustain .sustain_txt dl dt{font-size: 1.71rem; font-weight: 600;}
+.sustainability .swiper_sustain .sustain_txt dl dd{font-size: 0.86rem; text-align: justify;}
+
+.sustainability .viewmore{margin-top: auto;
+    justify-content: center; background: #fff; padding: 12px; border-radius: 23px;}
+
+/* 인재채용 */
+.career{padding-bottom: 550px;
+    background: url(../images/main/career_bg.jpg) top center no-repeat; background-size: cover; color: #fff; text-align: center;}
+.career .career_con p{font-size: 1.07rem; font-weight: 700; margin-top: 72px;}
+.career .career_con ul{padding: 0 20px; display: flex; gap: 24px; justify-content: center; margin-top: 30px;}
+.career .career_con ul li{border: 1px solid #fff; border-radius: 15px;
+    width: 125px;
+    height: 125px;
+    display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+    background: rgba(255, 255, 255, .1); backdrop-filter: blur(5px);}
+.career .career_con ul li a{color: #fff; font-size: 1.07rem;  font-weight: 700;}
+.career .career_con ul li span{display: block; font-size: 4rem; margin-bottom: 5px;}
+
+#wrap{position: relative;}
+#footerArea{position: absolute; left: 0; bottom: 0;}

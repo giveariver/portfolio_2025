@@ -1,0 +1,91 @@
+/* sub1_1 콘텐츠 */
+/* 탭1 cj푸드빌 소개 */
+section{padding-bottom: 100px; display: none;}
+.story h3{font-size: 1.86rem; font-weight: 700; text-align: center;}
+.story p{margin-top: 10px;}
+.story img{width: 100%; margin: 10px 0;}
+
+.story>div{margin-bottom: 50px;}
+
+.story .story_txt01 img{border-radius: 0 60px 0 60px;}
+.story .story_txt01 p{text-align: justify;}
+
+.story strong{font-size: 1.43rem;}
+.story span{font-weight: 600;}
+
+.story .story_txt02 span{color: var(--font-color-point1);}
+.story .story_txt02 img:nth-of-type(1){border-radius: 60px 60px 0 0;}
+.story .story_txt02 img:nth-of-type(2){border-radius: 0 0 60px 60px;}
+.story .story_txt02 div{display: none;}
+
+.story .story_txt03 span{color: var(--font-color-point2);}
+.story .story_txt03 img{border-radius: 0 60px 0 0;}
+
+.story .story_txt04 span{color: var(--font-color-main);}
+.story .story_txt04 img{border-radius: 60px 0 60px 0;}
+
+
+/* 탭2 미션비전 */
+.mvision h3{font-size: 1.86rem; font-weight: 700; text-align: center;}
+.mvision strong{font-size: 1.21rem;}
+.mvision>div{margin-bottom: 50px;}
+
+.mvision .mvision_con01 span{display: block; padding: 20px 20px 0;}
+.mvision .mvision_con01 span img{width: 100%;}
+
+.mvision .mvision_con02 .foodville_mvision{margin-bottom: 40px;}
+.mvision .mvision_con02 .foodville_mvision li{margin: 15px 0;}
+.mvision .mvision_con02 .foodville_mvision li div{font-size: 1.29rem; text-align: center; font-weight: 600;
+    position: relative; margin-top: 5px;}
+.mvision .mvision_con02 .foodville_mvision li img{width: 100%; border-radius: 12px;}
+.mvision .mvision_con02 .foodville_mvision li p{width: 100%; color: #fff;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.mvision .mvision_con02 .foodville_mvision li span{font-family: "Montserrat", sans-serif;}
+.mvision .mvision_con02 .foodville_mvision li:nth-of-type(1) span{color: var(--font-color-point1);}
+.mvision .mvision_con02 .foodville_mvision li:nth-of-type(2) span{color: var(--font-color-main);}
+
+
+.mvision .mvision_con02 .value li{margin: 10px 0; text-align: center;}
+.mvision .mvision_con02 .value dl{color: #fff; border-radius: 12px; position: relative; overflow: hidden;}
+.mvision .mvision_con02 .value dt{font-size: 1.21rem; padding: 12px 0;
+    font-family: "Montserrat", sans-serif; font-weight: 600;
+    background: rgba(0, 0, 0, .35); transition: all .5s ease;}
+.mvision .mvision_con02 .value dt.active{background: none;}
+.mvision .mvision_con02 .value dt span{font-size: 1.57rem; font-weight: 700;}
+.mvision .mvision_con02 .value dd{display: none; padding-bottom: 15px;}
+    .mvision .mvision_con02 .value li:nth-of-type(1) dl{
+        background: url(../images/sub1_1/value01.jpg) center no-repeat;
+        background-size: cover;}
+    .mvision .mvision_con02 li:nth-of-type(2) dl{
+        background: url(../images/sub1_1/value02.jpg) center no-repeat;
+        background-size: cover;}
+    .mvision .mvision_con02 li:nth-of-type(3) dl{
+        background: url(../images/sub1_1/value03.jpg) center no-repeat;
+        background-size: cover;}
+    .mvision .mvision_con02 li:nth-of-type(4) dl{
+        background: url(../images/sub1_1/value04.jpg) center no-repeat;
+        background-size: cover;}
+    .mvision .mvision_con02 li:nth-of-type(5) dl{
+        background: url(../images/sub1_1/value05.jpg) center no-repeat;
+        background-size: cover;}
+
+/* 탭3 ci */
+.ci h3{font-size: 1.86rem; font-weight: 700; text-align: center;}
+.ci .ci_logo{padding: 30px 18px;}
+.ci img{width: 100%;}
+
+.ci ul{padding: 0 18px; margin-bottom: 60px;}
+.ci ul li{display: flex; justify-content: center; margin-bottom: 20px;}
+.ci ul li strong{width: 80px; font-size: 1.43rem;}
+.ci ul li p{margin-top: 5px; width: px; font-weight: 500;}
+.ci ul li p span{display: block; font-size: 1.14rem; font-weight: 700; margin-bottom: 5px;}
+.ci ul li:nth-of-type(1) strong{color: var(--font-color-main);}
+.ci ul li:nth-of-type(2) strong{color: var(--font-color-point1);}
+.ci ul li:nth-of-type(3) strong{color: var(--font-color-point2);}
+
+.ci strong{font-size: 1.14rem;}
+.ci .ci_download img{width: 100%; margin: 10px 0;}
+.ci .ci_download div{padding: 0 15px; display: flex; justify-content: space-evenly;
+    margin-bottom: 30px;}
+.ci .ci_download a{display: flex; align-items: center; justify-content: center; gap: 5px;
+    background: #333; color: #fff; width: 40%; padding: 6px; border-radius: 5px;}
